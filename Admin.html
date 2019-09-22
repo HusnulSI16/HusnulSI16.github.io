@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AdminProfil</title>
+	<style type="text/css">
+		body {
+		font-family: 'Segoe UI', sans-serif;
+		background-color: rgb(58, 166, 201);
+		}
+ 
+		.sidebar {
+		height: 100%;
+		width: 200px;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #181a18;
+		overflow-x: hidden;
+		padding-top: 16px;
+		}
+		 
+		.sidebar a {
+		padding: 10px 8px 6px 16px;
+		text-decoration: none;
+		font-size: 20px;
+		color: #5f635f;
+		display: block;
+		}
+		 
+		.sidebar a:hover {
+		  color: #f1f1f1;
+		}
+
+		.sidebar img {
+		padding: 10px;
+		text-decoration: none;
+		font-size: 20px;
+		color: black;
+		display: block;
+		}
+		 
+		.main {
+		margin-left: 200px;
+		padding: 0px 10px;
+		background-color: rgb(58, 166, 201);
+		}
+		.diri table {
+			position: middle;
+		}
+		@media screen and (max-height: 450px) {
+		.sidebar {padding-top: 15px;}
+		.sidebar a {font-size: 18px;}
+		}
+	</style>
+</head>
+<body>
+	<div class="sidebar">
+		<img src="Logo/Admin.GIF" style=" width: 150px; height: 150px; border-radius: 50%">
+		<a href="#profil"><i class="fa fa-fw fa-home"></i> profil</a>
+		<a href="#Stok"><i class="fa fa-fw fa-wrench"></i> Stok</a>
+		<a href="#Penjualan"><i class="fa fa-fw fa-envelope"></i> Penjualan</a>
+		<a href="#Laporan"><i class="fa fa-fw fa-envelope"></i> Laporan</a>
+		<a href="index.html"><i class="fa fa-fw fa-envelope"></i> Keluar</a>
+	</div>
+	 
+	<div class="main" id="profil">
+			<div class="personal">
+				<div class="diri">
+					<h3 style="text-align: center;">Data Diri</h3> <hr>
+					<table>
+						<tr>
+							<td><b>Nama</b></td>
+							<td>:</td>
+							<td>Irmawati Diana Dewi</td>
+						</tr>
+						<tr>
+							<td><b>Jenis Kelamin</b></td>
+							<td>:</td>
+							<td> Perempuan</td>
+						</tr>
+						<tr>
+							<td><b>Tempat,Tgl Lahir</b></td>
+							<td>:</td>
+							<td> Gresik, 26 Juli 1998</td>
+						</tr>
+						<tr>
+							<td><b>Agama</b></td>
+							<td>:</td>
+							<td> Islam</td>
+						</tr>
+							<td><b>Kewarganegaraan</b></td>
+							<td>:</td>
+							<td> Indonesia</td>
+						<tr>
+							<td><b>Alamat</b></td>
+							<td>:</td>
+							<td> Perum. Istana Tidar B5 no.3, Jember</td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="kontak">
+					<h3 style="text-align: center;">Kontak</h3><hr>
+					<table>
+						<tr>
+							<td><b>No. HP</b></td>
+							<td>:</td>
+							<td> 081345678076</td>
+						</tr>
+						<tr>
+							<td><b>E-mail</b></td>
+							<td>:</td>
+							<td> cvSaya@cvBaru.com</td>
+						</tr>
+
+						<tr>
+							<td><b>facebook</b></td>
+							<td>:</td>
+							<td>facebook.com/irsandy.maulana</td>
+						</tr>
+					</table>	
+				</div>
+			</div>
+		</div>
+
+</body>
+</html>
