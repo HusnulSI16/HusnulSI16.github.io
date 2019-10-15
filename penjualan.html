@@ -1,46 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Laporan</title>
+  <link rel="stylesheet" type="text/css" href="css/Style.css">
+</head>
 <style>
-body {
-  font-family: "Lato", sans-serif;
-}
-
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
 table { /* css buat tabel*/
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -57,23 +21,6 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-.stok { /* css button aksi*/
-  width: 100px;
-  height: :100px;
-  border-collapse: 1px;
-  background: green;
-  color: white;
-  font-size: 18px;
-}
-
-.delete { /* css button aksi*/
-  width: 80px;
-  height: :100px;
-  border-collapse: 1px;
-  background: red;
-  color: white;
-  font-size: 18px;
-}
 </style>
 </head>
 <body>
@@ -105,8 +52,8 @@ tr:nth-child(even) {
   <td>10000 KG</td>
   <td>0,25 KG</td>
   <td>10000</td>
-  <td><button class="stok" type="submit">Verifikasi</button>
-    <button class="delete" type="submit">Delete</button></td>
+  <td><button class="btn bg-green" type="submit">Verifikasi</button>
+    <button class="btn bg-red" type="submit">Delete</button></td>
   </tr>
   <tr>
     <td>1</td>
@@ -114,8 +61,8 @@ tr:nth-child(even) {
   <td>10000 KG</td>
   <td>0,25 KG</td>
   <td>10000</td>
-  <td><button class="stok" type="submit">Verifikasi</button>
-    <button class="delete" type="submit">Delete</button></td>
+  <td><button class="btn bg-green" type="submit">Verifikasi</button>
+    <button class="btn bg-red" type="submit">Delete</button></td>
   </tr>
   <tr>
     <td>1</td>
@@ -123,8 +70,8 @@ tr:nth-child(even) {
   <td>10000 KG</td>
   <td>0,25 KG</td>
   <td>10000</td>
-  <td><button class="stok" type="submit">Verifikasi</button>
-    <button class="delete" type="submit">Delete</button></td>
+  <td><button class="btn bg-green" type="submit">Verifikasi</button>
+    <button class="btn bg-red" type="submit">Delete</button></td>
   </tr>
   <tr>
    <td>1</td>
@@ -132,8 +79,8 @@ tr:nth-child(even) {
   <td>10000 KG</td>
   <td>0,25 KG</td>
   <td>10000</td>
-  <td><button class="stok" type="submit">Verifikasi</button>
-    <button class="delete" type="submit">Delete</button></td>
+  <td><button class="btn bg-green" type="submit">Verifikasi</button>
+    <button class="btn bg-red" type="submit">Delete</button></td>
   </tr>
   <tr>
 </table>
