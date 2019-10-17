@@ -1,0 +1,107 @@
+body {
+	font-family: 'Segoe UI', sans-serif;
+	background-color: white;
+}
+ 
+.sidebar {
+	height: 100%;
+	width: 200px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #181a18;
+	overflow-x: hidden;
+	padding-top: 16px;
+}
+		 
+.sidebar a {
+	padding: 10px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #5f635f;
+	display: block;
+}
+	 
+.sidebar a:hover {
+	color: #f1f1f1;
+}
+
+.sidebar img {
+	padding: 10px;
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	display: block;
+}
+		 
+.main {
+	margin-left: 200px;
+	padding: 0px 10px;
+	background-color: #f5ffab;
+}
+		
+.diri table {
+	position: middle;
+}
+@media screen and (max-height: 450px) {
+.sidebar {padding-top: 15px;}
+.sidebar a {font-size: 18px;}
+}
+.bg-blue {
+  background-color: #4e73df;
+}
+
+.bg-green {
+  background-color: #02B49A;
+}
+
+.bg-gray{
+  background-color: #EFF0F3;
+}
+.card {
+  position: relative;
+  padding-left: 10px;
+  margin: 0;
+  background-color: #fff;
+  border-radius: 0.35rem;
+}
+.card-body-login, 
+.card-body,
+.card-body-small{
+  padding: 1.25rem;
+  border-top: 0 
+}
+
+.row {
+  display: flex;
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
+}
+.tabel{
+  width: 100%;
+  border: 1px solid #dddfeb;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+.tabel th{
+  border: 1px solid #dddfeb;
+  text-align: center;
+} 
+
+.tabel td{
+  border: 1px solid #dddfeb;
+}
+
+th {
+  text-align: right;
+}
+.edit { /* css punya button aksi */
+	width: 60px;
+	height: :100px;
+	border-collapse: 1px;
+	padding-top: 10px
+	background: grey;
+	color: black;
+	font-size: 18px;
+}

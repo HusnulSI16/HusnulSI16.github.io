@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.main {
+  max-width: 100%;
+  max-height: 100%;
+  background: #aaa url(Logo/Background.JPG) no-repeat;
+  background-size: cover;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.nav ul img{
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+.nav{
+  margin: auto;
+  text-align: center;
+  font-family: sans-serif;
+  width: 100%;
+  font-size: 20px;
+}
+
+.nav ul{
+  background: #232624;
+  list-style: none;
+  position: relative;
+  display: inline-table;
+  width: 100%;
+  padding: 10 0px;
+}
+.nav ul li{
+  float: right;
+}
+.nav ul li:hover{
+  background: #8f9691;
+}
+.nav ul li:hover a{
+  color: snow;
+}
+.nav ul li a{
+  display: block;
+  padding: 20px;
+  color: #bdc3c7;
+  text-decoration: none;
+}
+
+.konten{
+  width: 960px;
+  margin: 0 auto;
+}
+#box_sd{
+  background-color: rgba(247, 245, 245, 0.7);
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  margin: 80px 0;
+  padding: 20px 0;
+}
+
+#box_sd a{
+  display: block;
+  border: 2px solid grey;
+  color: grey;
+  padding: 2px 0;
+  width: 300px;
+  margin: 10px auto 0 auto;
+}
+
+#box_sd a:hover{
+  background-color: white;
+  color: #0074b9;
+}
+.btn-blue {
+  color: #fff;
+  background-color: #4e73df;
+  border-color: #4e73df;
+  width: 60px;
+  height: 25px;
+}
+.col-lg-7{
+  position: relative;
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+.tabel{
+  width: 80%;
+  margin-left: 10%;
+  border: 1px solid #dddfeb;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.tabel-profil{
+  width: 40%;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.tabel th{
+  padding: 10px;
+  border: 1px solid #dddfeb;
+  text-align: center;
+} 
+
+.tabel td{
+  padding: 10px;
+  border: 1px solid #dddfeb;
+}
+
+th {
+  text-align: right;
+}

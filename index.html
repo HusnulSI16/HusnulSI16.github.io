@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Si-Jago</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/pop_up.css">
+	<link rel="stylesheet" type="text/css" href="css/carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+</head>
+<body>
+<!--Header-->
+<div class="main">
+  <div class="nav">
+    <ul>
+      <img src="img/Jago.PNG">
+      <li><a href="#join_form"">Daftar</a></li>
+      <li><a href="#login_form">Login</a></li>
+    </ul>
+  </div>
+ <!--Middle-->
+ <div class="konten">
+      <div id="box_sd">
+        <h1>Selamat datang di situs web kami<br>Sistem Informasi Penjualan Keripik Jago</h1>
+        <a href="#kedua">Lihat Penjelasan</a>
+      </div>
+    </div>
+<!--pop_up-->
+<a href="#x" class="overlay" id="login_form"></a>
+    <div class="popup">
+        <form class="" action="Admin.html">
+            <h2>Selamat datang</h2>
+            <p>Silahkan masukkan username dan password anda</p>
+            <div>
+                <label for="login"> Username</label>
+                <input type="text" id="login" value="" />
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" value="" />
+            </div>
+            <button type="submit">Daftar</button>&nbsp;&nbsp;&nbsp;atau&nbsp;&nbsp;&nbsp;<a href="#join_form" id="join_pop">Daftar</a>
+         <a class="close" href="#close"></a>
+       </form>
+   </div>
+
+<a href="#x" class="overlay" id="join_form"></a>
+    <div class="popup">
+        <form action="pelanggan_home.html">
+            <h2>Daftar</h2>
+            <p>Masukkan data</p>
+            <div>
+                <label for="nama">Nama Lengkap</label>
+                <input required type="text" id="nama" value="" />
+            </div>
+            <div>
+                <label for="Telepon">Nomor telepon</label>
+                <input required type="number" id="Telepon" value="" />
+            </div>
+            <div>
+                <label for="email">Login (Email)</label>
+                <input required type="text" id="email" value="" />
+            </div>
+            <div>
+                <label for="pass">Password</label>
+                <input required type="password" id="pass" value="" />
+            </div>
+            <button type="submit">Daftar</button>&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;&nbsp;<a href="#login_form" id="login_pop">Masuk</a>
+        </form>
+            <a class="close" href="#close"></a>
+    </div>
+
+<!--carousel-->
+<div class=malasngoding-slider>
+    <div class=isi-slider>
+        <img src="img/Gambar1.JPG" alt="Gambar 1">
+        <img src="img/Gambar2.JPG" alt="Gambar 2">
+        <img src="img/Gambar3.JPG" alt="Gambar 3">
+      </div>
+    </div>
+ 
+
+
+     <!--footer-->
+ <div class="sale-statistic-area">
+    <div class="container">
+    <div class="col-xs-12" style="text-align: center;">
+        <div id="kedua">
+        <h4>Si-Jago</h4>
+        <div class="box_sd"><p style="text-align: center; margin-left: 50px; margin-bottom: 20px;">Usaha ini merupakan usaha penjualan keripik yang ada jember. sistem ini merupakan sistme jasa pengantar pembelian ikan kepada konsumen. Dan sistem ini digunakan untuk meningkatkan penjualan ikan dengan mudah dan meningkatkan kesejahteraan para pengguna. Juga berdampak pada peningkatan penjualan dan efisiensi waktu dalam pemesanan keripik. Memudahkan pelanggan dalam melihat jumlah stok ikan yang ada. Sehingga menghindari kemungkinan kelebihan pesanan yang dapat mengurangi kadar kepercayaan pelanggan terhadap Penjual.</p></div>
+        </div>
+    </div>
+</div>
+    <div id="footer">
+        Copyright &copy; 2019
+        Designed by <a href="">WereWolf</a>
+    </div>
+ </div>
+</body>
+</html>
