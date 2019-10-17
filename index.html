@@ -1,59 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Home</title>
-  <link rel="stylesheet" type="text/css" href="./css/index.css">
+	<title>Si-Jago</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/pop_up.css">
+	<link rel="stylesheet" type="text/css" href="css/carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
-
 <body>
-  <div class="main">
+<!--Header-->
+<div class="main">
   <div class="nav">
     <ul>
-      <img src="Logo/Jago.PNG">
+      <img src="img/Jago.PNG">
       <li><a href="#join_form"">Daftar</a></li>
       <li><a href="#login_form">Login</a></li>
     </ul>
   </div>
-
-  <!--konten-->
-  <div class="konten">
-    <h3>Selamat Datang di situs web kami</h3>
-    <h1>Sistem Informasi Penjualan Keripik<br>Jago</h1>
-    <div class=malasngoding-slider>
-      <div class=isi-slider>
-        <img src="Logo/Gambar1.JPG" alt="Gambar 1">
-        <img src="Logo/Gambar2.JPG" alt="Gambar 2">
-        <img src="Logo/Gambar3.JPG" alt="Gambar 3">
+ <!--Middle-->
+ <div class="konten">
+      <div id="box_sd">
+        <h1>Selamat datang di situs web kami<br>Sistem Informasi Penjualan Keripik Jago</h1>
+        <a href="#kedua">Lihat Penjelasan</a>
       </div>
     </div>
-  </div>
-
- <!--pop up-->
-
-  </div>
-        <a href="#x" class="overlay" id="login_form"></a>
-        <div class="popup">
-          <form class="" action="Admin.html">
-            <h2>Welcome Guest!</h2>
-            <p>Please enter your login and password here</p>
+<!--pop_up-->
+<a href="#x" class="overlay" id="login_form"></a>
+    <div class="popup">
+        <form class="" action="pelanggan_home.html">
+            <h2>Selamat datang</h2>
+            <p>Silahkan masukkan username dan password anda</p>
             <div>
-                <label for="login">Login</label>
+                <label for="login"> Username</label>
                 <input type="text" id="login" value="" />
             </div>
             <div>
                 <label for="password">Password</label>
                 <input type="password" id="password" value="" />
             </div>
-            <button type="submit">Log in</button>&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;&nbsp;<a href="#join_form" id="join_pop">Daftar</a>
+            <button type="submit">Daftar</button>&nbsp;&nbsp;&nbsp;atau&nbsp;&nbsp;&nbsp;<a href="#join_form" id="join_pop">Daftar</a>
          <a class="close" href="#close"></a>
        </form>
-       </div>
-           
-    	
-        <!-- popup form #2 -->
-        <a href="#x" class="overlay" id="join_form"></a>
-        <div class="popup">
-            <h2>Sign Up</h2>
+   </div>
+
+<a href="#x" class="overlay" id="join_form"></a>
+    <div class="popup">
+        <form action="pelanggan_home.html">
+            <h2>Daftar</h2>
             <p>Masukkan data</p>
             <div>
                 <label for="nama">Nama Lengkap</label>
@@ -71,15 +64,36 @@
                 <label for="pass">Password</label>
                 <input type="password" id="pass" value="" />
             </div>
-            <input type="button" value="Sign Up" />&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;&nbsp;<a href="#login_form" id="login_pop">Log In</a>
-
+            <button type="submit">Daftar</button>&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;&nbsp;<a href="#login_form" id="login_pop">Masuk</a>
+        </form>
             <a class="close" href="#close"></a>
-        </div>
+    </div>
+
+<!--carousel-->
+<div class=malasngoding-slider>
+    <div class=isi-slider>
+        <img src="img/Gambar1.JPG" alt="Gambar 1">
+        <img src="img/Gambar2.JPG" alt="Gambar 2">
+        <img src="img/Gambar3.JPG" alt="Gambar 3">
+      </div>
+    </div>
+ 
 
 
      <!--footer-->
-    <div id="footer" style="text-align: center;">
-        Copyright &copy; 2019
-        Designed by kelompok 4 Perancangan Website C</a>
+ <div class="sale-statistic-area">
+    <div class="container">
+    <div class="col-xs-12" style="text-align: center;">
+        <div id="kedua">
+        <h4>Si-Jago</h4>
+        <div class="box_sd"><p style="text-align: center; margin-left: 50px; margin-bottom: 20px;">Usaha ini merupakan usaha penjualan keripik yang ada jember. sistem ini merupakan sistme jasa pengantar pembelian ikan kepada konsumen. Dan sistem ini digunakan untuk meningkatkan penjualan ikan dengan mudah dan meningkatkan kesejahteraan para pengguna. Juga berdampak pada peningkatan penjualan dan efisiensi waktu dalam pemesanan keripik. Memudahkan pelanggan dalam melihat jumlah stok ikan yang ada. Sehingga menghindari kemungkinan kelebihan pesanan yang dapat mengurangi kadar kepercayaan pelanggan terhadap Penjual.</p></div>
+        </div>
     </div>
+</div>
+    <div id="footer">
+        Copyright &copy; 2019
+        Designed by <a href="">WereWolf</a>
+    </div>
+ </div>
 </body>
+</html>
