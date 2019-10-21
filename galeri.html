@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<head>
+<title>galeri</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/pop_up.css">
+  <link rel="stylesheet" type="text/css" href="css/carousel.css">
+    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+  <div class="main">
+  <div class="nav">
+    <ul>
+      <img src="img/Jago.PNG">
+      <li><a href="#join_form"">Daftar</a></li>
+      <li><a href="#login_form">Masuk</a></li>
+      <li><a href="kontak.html">Komentar</a></li>
+      <li><a href="galeri.html">Galeri</a></li>
+      <li class="active"><a href="index.html">Beranda</a></li>
+    </ul>
+  </div>
+</div>
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content"> 
+      <!-- ################################################################################################ -->
+      <div id="gallery">
+        <figure>
+          <header class="heading">Galery Produk</header>
+          <ul class="nospace clear">
+            <li class="one_quarter first"><a href="#"><img src="img/Gambar1.jpg" alt=""></a></li>
+            <li class="one_quarter"><a href="#"><img src="img/Gambar1.jpg" alt=""></a></li>
+            <li class="one_quarter"><a href="#"><img src="img/Gambar1.jpg" alt=""></a></li>
+            <li class="one_quarter"><a href="#"><img src="img/Gambar1.jpg" alt=""></a></li>
+            <li class="one_quarter first"><a href="#"><img src="img/Gambar1.jpg" alt=""></a></li>
+            <li class="one_quarter"><a href="#"><img src="img/Gambar1.jpg" alt=""></a></li>
+            <li class="one_quarter"><a href="#"><img src="img/Gambar1.jpg" alt=""></a></li>
+            <li class="one_quarter"><a href="#"><img src="img/Gambar1.jpg" alt=""></a></li>
+            <li class="one_quarter first"><a href="#"><img src="img/Gambar1.jpg" alt=""></a></li>
+            <li class="one_quarter"><a href="#"><img src="img/Gambar1.jpg" alt=""></a></li>
+            <li class="one_quarter"><a href="#"><img src="img/Gambar1.jpg" alt=""></a></li>
+            <li class="one_quarter"><a href="#"><img src="img/Gambar1.jpg" alt=""></a></li>
+          </ul>
+          <figcaption>Galerry Produk</figcaption>
+        </figure>
+      </div>
+      <!-- ################################################################################################ -->
+      <!-- ################################################################################################ -->
+      <nav class="pagination">
+        <ul>
+          <li><a href="#">&laquo; Previous</a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><strong>&hellip;</strong></li>
+          <li><a href="#">6</a></li>
+          <li class="current"><strong>7</strong></li>
+          <li><a href="#">8</a></li>
+          <li><a href="#">9</a></li>
+          <li><strong>&hellip;</strong></li>
+          <li><a href="#">14</a></li>
+          <li><a href="#">15</a></li>
+          <li><a href="#">Next &raquo;</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!--pop_up-->
+<a href="#x" class="overlay" id="login_form"></a>
+    <div class="popup">
+        <form class="" action="pelanggan_home.html">
+            <h2>Selamat datang</h2>
+            <p>Silahkan masukkan username dan password anda</p>
+            <div>
+                <label for="login"> Username</label>
+                <input required type="text" id="login" value="" />
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" value="" />
+            </div>
+            <button type="submit">Masuk</button>&nbsp;&nbsp;&nbsp;atau&nbsp;&nbsp;&nbsp;<a href="#join_form" id="join_pop">Daftar</a>
+         <a class="close" href="#close"></a>
+       </form>
+   </div>
+
+<a href="#x" class="overlay" id="join_form"></a>
+    <div class="popup">
+        <form action="pelanggan_home.html">
+            <h2>Daftar</h2>
+            <p>Masukkan data</p>
+            <div>
+                <label for="nama">Nama Lengkap</label>
+                <input required type="text" id="nama" value="" />
+            </div>
+            <div>
+                <label for="Telepon">Nomor telepon</label>
+                <input required type="number" id="Telepon" value="" />
+            </div>
+            <div>
+                <label for="email">Login (Email)</label>
+                <input required type="text" id="email" value="" />
+            </div>
+            <div>
+                <label for="pass">Password</label>
+                <input required type="password" id="pass" value="" />
+            </div>
+            <button type="submit">Daftar</button>&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;&nbsp;<a href="#login_form" id="login_pop">Masuk</a>
+        </form>
+            <a class="close" href="#close"></a>
+    </div>
+    
+<!-- ################################################################################################ -->
+
+<div class="wrapper row4">
+  <footer id="footer" class="hoc clear"> 
+    <div class="one_third first">
+      <h6 class="heading">Luctus turpis interdum</h6>
+      <ul class="nospace btmspace-30 linklist contact">
+        <li><i class="fa fa-map-marker"></i>
+          <address>
+          Jl.Kalimatan 34 Kampus Universitas Jember, 68125
+          </address>
+        </li>
+        <li><i class="fa fa-phone"></i> +62 (0331) 4858675</li>
+        <li><i class="fa fa-envelope-o"></i> unej.ac.id@gmail.com</li>
+      </ul>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="heading">Facilisis morbi interdum</h6>
+      <ul class="nospace linklist">
+        <li>
+          <article>
+            <h2 class="nospace font-x1"><a href="#">volutpat maximus vel</a></h2>
+            <time class="font-xs block btmspace-10" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
+            <p class="nospace">Primis in faucibus nam dictum malesuada dictum maecenas in magna arcu [&hellip;]</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h2 class="nospace font-x1"><a href="#">et malesuada fames ante</a></h2>
+            <time class="font-xs block btmspace-10" datetime="2045-04-05">Thursday, 5<sup>th</sup> April 2045</time>
+            <p class="nospace">Nullam tortor ligula lobortis pharetra leo vel malesuada auctor odio nunc [&hellip;]</p>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="heading">Justo condimentum tortor</h6>
+      <p class="nospace btmspace-30">Non condimentum lectus proin consequat eleifend elementum quisque nulla.</p>
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Newsletter:</legend>
+          <input class="btmspace-15" type="text" value="" placeholder="Name">
+          <input class="btmspace-15" type="text" value="" placeholder="Email">
+          <button type="submit" value="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+  </footer>
+</div>
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <p class="fl_left">Copyright &copy; 2019 - Kelompok 4 - <a href="#">Kelas C</a></p>
+  </div>
+</div>
+
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
