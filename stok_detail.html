@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Admin Profil</title>
-	<link rel="stylesheet" type="text/css" href="css/side_bar.css">
+	<title>Stok Detail</title>
+  <link href="css/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <style>
 body {
@@ -34,27 +34,58 @@ body {
 }
 
 .main {
-  margin-left: 160px; /* Same as the width of the sidenav */
+  margin-left: 160px; /* dipinggir */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav a {font-size: 14px;}
 }
 
+table { /* css punya tabel*/
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-.edit { /* css punya button aksi */
-	width: 60px;
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.btn { /* css punya button aksi */
+	width: 80px;
 	height: :100px;
 	border-collapse: 1px;
-	padding-top: 10px
-	background: grey;
 	color: black;
 	font-size: 18px;
 }
+.bg-green {
+	background: green;
+}
+.bg-grey {
+	background: grey;
+}
+.bg-red {
+	background: red;
+}
 
+.paginasi {
+  padding: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+float: right;
+font-family: Verdana, sans-serif;
+}
 </style>
 </head>
 <body>
@@ -68,41 +99,7 @@ body {
       <a href="index.html">Keluar</a>
   </div>
 
-<div class="main">
-  <h2>Profil</h2>
- 	 <table>
-						<tr>
-							<td><b>Nama</b></td>
-							<td>:</td>
-							<td>Irmawati Diana Dewi</td>
-						</tr>
-						<tr>
-							<td><b>Jenis Kelamin</b></td>
-							<td>:</td>
-							<td> Perempuan</td>
-						</tr>
-						<tr>
-							<td><b>Tempat,Tgl Lahir</b></td>
-							<td>:</td>
-							<td> Gresik, 26 Juli 1998</td>
-						</tr>
-						<tr>
-							<td><b>Agama</b></td>
-							<td>:</td>
-							<td> Islam</td>
-						</tr>
-							<td><b>Kewarganegaraan</b></td>
-							<td>:</td>
-							<td> Indonesia</td>
-						<tr>
-							<td><b>Alamat</b></td>
-							<td>:</td>
-							<td> Perum. Istana Tidar B5 no.3, Jember</td>
-						</tr>
-					</table>
-					<tr><button class="edit" type="submit">Edit</button>
-						</tr>
-				</div>
+
 </div>
    
 </body>
