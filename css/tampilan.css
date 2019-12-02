@@ -1,4 +1,3 @@
-
 .badan
 {
     width: 880px;
@@ -53,7 +52,7 @@
     display: block;
     float: left;
     width: 45%;
-    margin: 4px;
+    margin: 3px;
     text-align: center;
     color: white;
 }
@@ -66,10 +65,42 @@
  
 .tombol-detail
 {
-    background-color: green;
+    background-color: #2bbdd5;
 }
  
 .tombol-beli
 {
-    background-color: crimson;
+    background-color: #429916;
+}
+
+.tmbl {
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+     padding: 7px;
+}
+.tmbl:hover
+{
+    background-color: black;
+    transition-duration: 50ms;
+}
+.tmbl_tambah{
+    background-color: #2980d8;
+}
+.kotak {
+    padding: 35px;
+    min-height: 540px;
+    padding-top: 50px;
+    background-color: #adbdcb;
+    background-color: #cde1df;
+    overflow: hidden;
+}
+
+.kotak_putih {
+    padding: 15px;
+    background-color: white;
+    width: 95%;
+    margin: auto;
 }

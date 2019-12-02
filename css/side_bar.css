@@ -1,107 +1,100 @@
+<style>
 body {
-	font-family: 'Segoe UI', sans-serif;
-	background-color: white;
-}
- 
-.sidebar {
-	height: 100%;
-	width: 200px;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	background-color: #181a18;
-	overflow-x: hidden;
-	padding-top: 16px;
-}
-		 
-.sidebar a {
-	padding: 10px 8px 6px 16px;
-	text-decoration: none;
-	font-size: 20px;
-	color: #5f635f;
-	display: block;
-}
-	 
-.sidebar a:hover {
-	color: #f1f1f1;
+  font-family: "Lato", sans-serif;
 }
 
-.sidebar img {
-	padding: 10px;
-	text-decoration: none;
-	font-size: 20px;
-	color: black;
-	display: block;
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #adbdcb;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
-		 
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
 .main {
-	margin-left: 200px;
-	padding: 0px 10px;
-	background-color: #f5ffab;
+  margin-left: 160px; /* dipinggir */
+  padding: 0px 10px;
 }
-		
-.diri table {
-	position: middle;
-}
+
 @media screen and (max-height: 450px) {
-.sidebar {padding-top: 15px;}
-.sidebar a {font-size: 18px;}
-}
-.bg-blue {
-  background-color: #4e73df;
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 14px;}
 }
 
-.bg-green {
-  background-color: #02B49A;
-}
-
-.bg-gray{
-  background-color: #EFF0F3;
-}
-.card {
-  position: relative;
-  padding-left: 10px;
-  margin: 0;
-  background-color: #fff;
-  border-radius: 0.35rem;
-}
-.card-body-login, 
-.card-body,
-.card-body-small{
-  padding: 1.25rem;
-  border-top: 0 
-}
-
-.row {
-  display: flex;
-  margin-right: -0.75rem;
-  margin-left: -0.75rem;
-}
-.tabel{
-  width: 100%;
-  border: 1px solid #dddfeb;
+table { /* css punya tabel*/
+  font-family: arial, sans-serif;
   border-collapse: collapse;
-  margin-bottom: 10px;
-}
-.tabel th{
-  border: 1px solid #dddfeb;
-  text-align: center;
-} 
-
-.tabel td{
-  border: 1px solid #dddfeb;
+  width: 100%;
+  font-size: 16px;
 }
 
-th {
-  text-align: right;
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 2px;
 }
-.edit { /* css punya button aksi */
-	width: 60px;
-	height: :100px;
-	border-collapse: 1px;
-	padding-top: 10px
-	background: grey;
-	color: black;
-	font-size: 18px;
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
+
+    #wrap1{
+      padding: 10px 0;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    #add_data{
+      float: right;
+    }
+
+    #add_data a{
+      padding: 7px;
+    }
+
+    .cari_wraper{
+      float: left;
+    }
+
+    .cari_wraper input{
+      padding: 7px;
+      border: 1px solid #ccc;
+    }
+
+    .cari_wraper a {
+      padding: 7px;
+      margin-top: 5px;
+      background-color: #ccc;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+    }
+
+    @media only screen and (max-width: 768px){
+      #add_data{
+        float: left;
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      #wrap1{
+        margin-bottom: 5px;
+      }
+    }
+</style>

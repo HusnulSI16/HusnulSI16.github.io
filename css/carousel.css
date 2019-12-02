@@ -1,5 +1,44 @@
+/*kotak tampilan atas*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.konten{
+  width: 960px;
+  margin: 0 auto;
+}
+#box_sd{
+  background-color: rgba(10, 116, 144, 0.7);
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  margin: 80px 0;
+  padding: 20px 0;
+}
+
+#box_sd a{
+  display: block;
+  border: 2px solid whitesmoke;
+  color: #e1e0e0;
+  padding: 6px 0;
+  width: 300px;
+  margin: 10px auto 0 auto;
+}
+
+#box_sd a:hover{
+  background-color: white;
+  color: #FFFCFC;
+}
+
+/*-----------------------------------------------------*/
+/*-----------------------------------------------------*/
+/*-----------------------------------------------------*/
+/*-----------------------------------------------------*/
+/*Carousel*/
 .malasngoding-slider { 
-  border: 10px solid #efefef; 
+  border: 2px solid #5d5858;
   position: relative; 
   overflow: hidden; 
   background: #efefef;
