@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>user keranjang</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" type="text/css" href="css/css.css">
+  <link rel="stylesheet" type="text/css" href="css/topnav.css">
+  <link rel="stylesheet" type="text/css" href="css/tampilan.css">
+  <link rel="stylesheet" type="text/css" href="css/layout.css" media="all">
+</head>
+<!-- <style>
+	.select{
+		background : rgb(255,145,0);
+	}
+	.select.highlight{
+		background : rgb(26,255,0);
+	}
+</style> -->
+
+<body>
+
+	<div class="topnav" id="myTopnav">
+  <a href="#login_form"">Keluar</a>
+  <a href="user_profil.html">Profil</a>
+  <a href="user_pesan.html">Pesan</a>
+  <a href="user_pembelian.html">Pesanan Saya</a>
+  <a href="user_keranjang.html">Keranjang</a>
+  <a href="user_home.html">Beranda</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<!--konten-->
+<div class="kotak">
+    <div class="kotak_putih">
+<h2 style="padding: 20px;">Data Pemesanan</h2>
+	<table class="tabel">
+		<tr>
+			<th>id</th>
+			<th>Nama</th>
+			<th>Jumlah/kg</th>
+			<th>Total Dibayarkan</th>
+			<th>Status</th>
+			<th>Upload Bukti Pembayaran</th>
+			<!-- <th>Upload Bukti Pembayaran</th> -->
+		</tr>
+			
+		<tr>
+			<td>1</td>
+			<td>Keripik Talas</td>
+			<td>10</td>
+			<td>100000</td>
+			<td>Produk dikirimkan</td>
+			<td><input type="file" name="foto" accept="image/*" required></td>
+<!-- 			<td><input type="button" name="Pesanan Diterima" value="Pesanan Diterima" id="select" class="select"> </td> -->
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Keripik Singkong</td>
+			<td>4</td>
+			<td>25000</td>
+			<td>pesanan telah diverifikasi</td>
+			<td><input type="file" name="foto" accept="image/*" required></td>
+		</tr>
+			<tr>
+			<td>3</td>
+			<td>Keripik ubi</td>
+			<td>15</td>
+			<td>25000</td>
+			<td>pesanan telah diverifikasi</td>
+			<td><input type="file" name="foto" accept="image/*" required></td>
+		</tr>
+			<tr>
+			<td>4</td>
+			<td>Keripik Pisang</td>
+			<td>30</td>
+			<td>25000</td>
+			<td>pesanan telah diverifikasi</td>
+			<td><input type="file" name="foto" accept="image/*" required></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Keripik ubi</td>
+			<td>15</td>
+			<td>25000</td>
+			<td>pesanan telah diverifikasi</td>
+			<td><input type="file" name="foto" accept="image/*" required></td>
+		</tr>
+	</table>
+
+	<div class="">
+		<button class="btn-blue">Tambah</button>
+	</div>
+	</div>
+	</div>
+
+<script>
+	function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+// jQuery(function($){
+// 	$('.select').click(function(){
+// 		$(this).toggleClass('highlight')
+// 	})
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stok</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/tampilan.css">
+    <link rel="stylesheet" href="css/side_bar.css">
+    <link rel="stylesheet" href="css/pagenation.css">
+</head>
+<body>
+
+<div class="sidenav" >
+  <img src="img/Admin.GIF" style=" width: 150px; height: 150px; border-radius: 50%">
+    <a href="Admin.html">Beranda</a>
+    <a href="admin_stok.html">Stok</a>
+    <a href="admin_pemesanan.html">Pemesanan</a>
+      <a href="admin_laporan.html">Laporan</a>
+      <a href="admin_pengguna.html">Pengguna</a>
+      <a href="index.html">Keluar</a>
+  </div>
+
+
+<!-- ################################################################################################ -->
+<div class="main">
+  <div class="kotak">
+    <div class="kotak_putih">
+<div class="wrapper row3">
+  <div class="hoc container clear"> 
+    <!-- ################################################################################################ -->
+    <div style="text-align: center;">
+      <h3>Produk Kripik Jago</h3>
+    </div>
+    <div id="wrap1">
+            <div class="cari_wraper">
+              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Cari ID.." title="Type in a name">
+            </div>
+            <div id="add_data">
+              <a href="admin_stok_tambah.html" class="tmbl tmbl_tambah"> Tambah Data</a>  
+            </div>  
+    </div>
+       <table id="myTable">
+  <tr>
+    <th>ID</th>
+    <th>Nama</th>
+    <th>Stok</th>
+    <th>Harga</th>
+    <th>Aksi</th>
+  </tr>
+  <tr>
+    <td>1</td>
+  <td>Kripik Talas</td>
+  <td>10000 Kg</td>
+  <td>10000</td>
+  <td><a class="tombol tombol-detail" href="admin_stok_detail.html">Detail</a></td>
+  </tr>
+  <tr>
+    <td>2</td>
+  <td>Kripikn Singkong</td>
+  <td>100 Kg</td>
+  <td>15000</td>
+  <td><a class="tombol tombol-detail" href="admin_stok_detail.html">Detail</a></td>
+  </tr>
+  <tr>
+    <td>3</td>
+  <td>Kripik Ubi</td>
+  <td>500 Kg</td>
+  <td>12000</td>
+  <td><a class="tombol tombol-detail" href="admin_stok_detail.html">Detail</a></td>
+  </tr>
+  <tr>
+   <td>4</td>
+  <td>Kripik Pisang</td>
+  <td>50000 Kg</td>
+  <td>17000</td>
+  <td><a class="tombol tombol-detail" href="admin_stok_detail.html">Detail</a></td>
+  </tr>
+  <tr>
+    <td>1</td>
+  <td>Kripik Talas</td>
+  <td>10000 Kg</td>
+  <td>10000</td>
+  <td><a class="tombol tombol-detail" href="admin_stok_detail.html">Detail</a></td>
+  </tr>
+  <tr>
+    <td>2</td>
+  <td>Kripik Singkong</td>
+  <td>100 Kg</td>
+  <td>15000</td>
+  <td><a class="tombol tombol-detail" href="admin_stok_detail.html">Detail</a></td>
+  </tr>
+  <tr>
+    <td>3</td>
+  <td>Kripik Ubi</td>
+  <td>500 Kg</td>
+  <td>12000</td>
+  <td><a class="tombol tombol-detail" href="admin_stok_detail.html">Detail</a></td>
+  </tr>
+  <tr>
+   <td>4</td>
+  <td>Kripik Pisang</td>
+  <td>50000 Kg</td>
+  <td>17000</td>
+  <td><a class="tombol tombol-detail" href="admin_stok_detail.html">Detail</a></td>
+  </tr>
+</table>
+    <!-- ################################################################################################ -->
+<br><br>
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a class="active" href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">&raquo;</a>
+    </div>
+</div>
+</div>
+</div>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+   
+</body>
+</html> 

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tambah Produk</title>
+  <link rel="stylesheet" href="css/side_bar.css">
+   <link rel="stylesheet" href="css/tampilan.css">
+  <style type="text/css">
+    form{
+      padding: 20px;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    .form_item{
+      display: block;
+      margin: auto;
+    }
+
+    .form_item label{
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form_item input, .form_item select{
+      padding: 8px;
+      width: 95%;
+    }
+
+    #submit_form{
+      float: right;
+      margin-top: 30px;
+    }
+
+    #preview_foto{
+      margin: auto;
+      padding: 8px;
+      border: 1px solid #ccc;
+    }
+
+    #preview_foto foto{
+      width: 100%;
+      height: auto;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="sidenav" >
+  <img src="img/Admin.GIF" style=" width: 150px; height: 150px; border-radius: 50%">
+    <a href="Admin.html">Beranda</a>
+    <a href="admin_stok.html">Stok</a>
+    <a href="admin_penjualan.html">Pemesanan</a>
+      <a href="admin_laporan.html">Laporan</a>
+      <a href="admin_pengguna.html">Pengguna</a>
+      <a href="index.html">Keluar</a>
+  </div>
+
+<div class="main">
+  <div class="kotak">
+    <div class="kotak_putih">
+          <h3>Tambah Data Produk Baru</h3>
+          <form>
+                        <div class="form_item">
+              <label>Upload Foto Produk</label>
+              <input type="file" name="foto" accept="image/*" required>
+              <div id="preview_foto">
+                <span>Tidak Ada File Terpilih</span>
+              </div>
+              <div id="file_info">
+                
+              </div>
+            </div>
+            <br>
+            <div class="form_item">
+              <label>Nama Produk</label>
+              <input type="text" name="Produk" required>
+            </div>
+            <br>
+            <div class="form_item">
+              <label>Jumlah Stok</label>
+              <input type="text" name="Produk" required>
+            </div>
+            <br>
+            <div class="form_item">
+              <label>Harga</label>
+              <input type="text" name="Produk" required>
+            </div>
+            <br>
+            <div class="form_item">
+              <label>Deskripsi</label>
+              <input type="text" name="Produk" required>
+            </div>
+            <br>
+
+            <div class="form_item" id="submit_form">
+              <button type="submit" href="#" class="tmbl tmbl_tambah">Simpan</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      </div>
+
+   
+</body>
+</html> 

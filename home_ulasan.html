@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<head>
+  <title>Komentar</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" type="text/css" href="css/css.css">
+  <link rel="stylesheet" type="text/css" href="css/topnav.css">
+  <link rel="stylesheet" type="text/css" href="css/pop_up.css">
+  <link rel="stylesheet" type="text/css" href="css/layout.css" media="all">
+</head>
+<body id="top">
+<!-- #####################################navbar########################################################### -->
+   <div class="topnav" id="myTopnav">
+  <a onclick="openForm()" >Masuk</a>
+  <a href="home_ulasan.html">Ulasan</a>
+  <a href="home_tentang.html">Tentang</a>
+  <a href="home_galeri.html">Produk</a>
+  <a href="index.html">Beranda</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+  
+  <!--pop_up-->
+<div class="form-popup" id="myForm">
+  <form action="user_home.html" class="form-container">
+    <h2>Masuk</h2>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Kata Sandi</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <a href="#x">Lupa Kata Sandi?</a>
+    <p>Belum Memiliki Akun? <a onclick="openFormdaftar()">Daftar</a></p>
+
+    <button type="submit" class="btn">Masuk</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Tutup</button>
+  </form>
+</div>
+
+<div class="form-popup" id="myFormdaftar">
+  <form action="user_home.html" class="form-container">
+    <h2>Daftar</h2>
+
+    <label for="nama"><b>Nama</b></label>
+    <input type="text" placeholder="Enter Nama" name="nama" required>
+    <label for="nomor"><b>Nomor Telepon</b></label>
+    <input type="text" placeholder="Enter Nomor Telepon" name="nomor" required>
+    <label for="alamat"><b>Alamat</b></label>
+    <input type="text" placeholder="Enter Alamat" name="alamat" required>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <label for="psw"><b>Kata Sandi</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Daftar</button>
+    <button type="button" class="btn cancel" onclick="closeForm2()">Kembali</button>
+  </form>
+</div>
+
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- #############################main body ################################################################### -->
+    <div class="content"> 
+      <div id="comments">
+        <h2>Ulasan</h2>
+        <ul>
+          <li>
+            <article>
+              <header>
+                <figure class="avatar"><img src="../images/demo/avatar.png" alt=""></figure>
+                <address>
+                By <a href="#">Sarmino</a>
+                </address>
+                <time datetime="2045-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2045 @08:15:00</time>
+              </header>
+              <img src="img/produk/3.jpg" style="width: 200px; height: 200px; padding: 20px;">
+              <div class="comcont">
+                <p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article>
+              <header>
+                <figure class="avatar"><img src="../images/demo/avatar.png" alt=""></figure>
+                <address>
+                By <a href="#">Sukarmin</a>
+                </address>
+                <time datetime="2045-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2045 @08:15:00</time>
+              </header>
+              <img src="img/produk/5.jpg" style="width: 200px; height: 200px; padding: 20px;">
+              <div class="comcont">
+                <p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article>
+              <header>
+                <figure class="avatar"><img src="../images/demo/avatar.png" alt=""></figure>
+                <address>
+                By <a href="#">Surmiati</a>
+                </address>
+                <time datetime="2045-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2045 @08:15:00</time>
+              </header>
+              <img src="img/produk/7.jpg" style="width: 200px; height: 200px; padding: 20px;">
+              <div class="comcont">
+                <p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article>
+              <header>
+                <figure class="avatar"><img src="../images/demo/avatar.png" alt=""></figure>
+                <address>
+                By <a href="#">Sarmino</a>
+                </address>
+                <time datetime="2045-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2045 @08:15:00</time>
+              </header>
+              <img src="img/produk/1.jpg" style="width: 200px; height: 200px; padding: 20px;">
+              <div class="comcont">
+                <p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article>
+              <header>
+                <figure class="avatar"><img src="../images/demo/avatar.png" alt=""></figure>
+                <address>
+                By <a href="#">Sukarmin</a>
+                </address>
+                <time datetime="2045-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2045 @08:15:00</time>
+              </header>
+              <img src="img/produk/2.jpg" style="width: 200px; height: 200px; padding: 20px;">
+              <div class="comcont">
+                <p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article>
+              <header>
+                <figure class="avatar"><img src="../images/demo/avatar.png" alt=""></figure>
+                <address>
+                By <a href="#">Surmiati</a>
+                </address>
+                <time datetime="2045-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2045 @08:15:00</time>
+              </header>
+              <img src="img/produk/9.jpg" style="width: 200px; height: 200px; padding: 20px;">
+              <div class="comcont">
+                <p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+
+ <!-- ###########################################footer######################################################## -->
+    <div class="wrapper row4">
+  <footer id="footer" class="hoc clear"> 
+    <div class="one_third first">
+      <h6 class="heading">Luctus turpis interdum</h6>
+      <ul class="nospace btmspace-30 linklist contact">
+        <li><i class="fa fa-map-marker"></i>
+          <address>
+          Jl.Kalimatan 34 Kampus Universitas Jember, 68125
+          </address>
+        </li>
+        <li><i class="fa fa-phone"></i> +62 (0331) 4858675</li>
+        <li><i class="fa fa-envelope-o"></i> unej.ac.id@gmail.com</li>
+      </ul>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="heading">Facilisis morbi interdum</h6>
+      <ul class="nospace linklist">
+        <li>
+          <article>
+            <h2 class="nospace font-x1"><a href="#">volutpat maximus vel</a></h2>
+            <time class="font-xs block btmspace-10" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
+            <p class="nospace">Primis in faucibus nam dictum malesuada dictum maecenas in magna arcu [&hellip;]</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h2 class="nospace font-x1"><a href="#">et malesuada fames ante</a></h2>
+            <time class="font-xs block btmspace-10" datetime="2045-04-05">Thursday, 5<sup>th</sup> April 2045</time>
+            <p class="nospace">Nullam tortor ligula lobortis pharetra leo vel malesuada auctor odio nunc [&hellip;]</p>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="heading">Justo condimentum tortor</h6>
+      <p class="nospace btmspace-30">Non condimentum lectus proin consequat eleifend elementum quisque nulla.</p>
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Newsletter:</legend>
+          <input class="btmspace-15" type="text" value="" placeholder="Name">
+          <input class="btmspace-15" type="text" value="" placeholder="Email">
+          <button type="submit" value="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+  </footer>
+</div>
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <p class="fl_left">Copyright &copy; 2019 - Kelompok 4 - <a href="#">Kelas C</a></p>
+  </div>
+</div>
+<!-- ########################################script############################################### -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+function openFormdaftar() {
+  document.getElementById("myFormdaftar").style.display = "block";
+}
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+function closeForm2() {
+  document.getElementById("myFormdaftar").style.display = "none";
+}
+</script>
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>

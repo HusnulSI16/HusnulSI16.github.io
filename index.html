@@ -2,72 +2,59 @@
 <html>
 <head>
 	<title>Si-Jago</title>
-    <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/pop_up.css">
 	<link rel="stylesheet" type="text/css" href="css/carousel.css">
-  <link href="css/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" type="text/css" href="css/topnav.css">
+<link href="css/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
 <!--Header-->
-<div class="main">
-  <div class="nav">
-    <ul>
-      <img src="img/Jago.PNG">
-      <li><a href="#join_form"">Daftar</a></li>
-      <li><a href="#login_form">Masuk</a></li>
-      <li><a href="tentang.html">Tentang</a></li>
-      <li><a href="galeri.html">Galeri</a></li>
-      <li><a href="index.html">Beranda</a></li>
-    </ul>
-  </div>
+<div class="topnav" id="myTopnav">
+  <a onclick="openForm()" >Masuk</a>
+  <a href="home_ulasan.html">Ulasan</a>
+  <a href="home_tentang.html">Tentang</a>
+  <a href="home_galeri.html">Produk</a>
+  <a href="index.html">Beranda</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
 
  <!--pop_up-->
-<a href="#x" class="overlay" id="login_form"></a>
-    <div class="popup">
-        <form class="" action="home.html">
-            <h2>Selamat datang</h2>
-            <p>Silahkan masukkan username dan password anda</p>
-            <div>
-                <label for="login"> Username</label>
-                <input required type="text" id="login" value="" />
-            </div>
-            <div>
-                <label for="password">Password</label>
-                <input required type="password" id="password" value="" />
-            </div>
-            <button type="submit">Daftar</button>&nbsp;&nbsp;&nbsp;atau&nbsp;&nbsp;&nbsp;<a href="#join_form" id="join_pop">Daftar</a>
-         <a class="close" href="#close"></a>
-       </form>
-   </div>
+<div class="form-popup" id="myForm">
+  <form action="user_home.html" class="form-container">
+    <h2>Masuk</h2>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <label for="psw"><b>Kata Sandi</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <a href="#x">Lupa Kata Sandi?</a>
+    <p>Belum Memiliki Akun? <a onclick="openFormdaftar()">Daftar</a></p>
+    <button type="submit" class="btn">Masuk</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Tutup</button>
+  </form>
+</div>
 
-<a href="#x" class="overlay" id="join_form"></a>
-    <div class="popup">
-        <form action="pelanggan_home.html">
-            <h2>Daftar</h2>
-            <p>Masukkan data</p>
-            <div>
-                <label for="nama">Nama Lengkap</label>
-                <input required type="text" id="nama" value="" />
-            </div>
-            <div>
-                <label for="Telepon">Nomor telepon</label>
-                <input required type="number" id="Telepon" value="" />
-            </div>
-            <div>
-                <label for="email">Login (Email)</label>
-                <input required type="text" id="email" value="" />
-            </div>
-            <div>
-                <label for="pass">Password</label>
-                <input required type="password" id="pass" value="" />
-            </div>
-            <button type="submit">Daftar</button>&nbsp;&nbsp;&nbsp;or&nbsp;&nbsp;&nbsp;<a href="#login_form" id="login_pop">Masuk</a>
-        </form>
-            <a class="close" href="#close"></a>
-    </div>
+<div class="form-popup" id="myFormdaftar">
+  <form action="user_home.html" class="form-container">
+    <h2>Daftar</h2>
+
+    <label for="nama"><b>Nama</b></label>
+    <input type="text" placeholder="Enter Nama" name="nama" required>
+    <label for="nomor"><b>Nomor Telepon</b></label>
+    <input type="text" placeholder="Enter Nomor Telepon" name="nomor" required>
+    <label for="alamat"><b>Alamat</b></label>
+    <input type="text" placeholder="Enter Alamat" name="alamat" required>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <label for="psw"><b>Kata Sandi</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <button type="submit" class="btn">Daftar</button>
+    <button type="button" class="btn cancel" onclick="closeForm2()">Kembali</button>
+  </form>
+</div>
 
  <!--Middle-->
  <div class="konten">
@@ -92,10 +79,11 @@
     <div class="col-xs-12" style="text-align: center;">
         <div id="kedua">
         <h4>Si-Jago</h4>
-        <div class="box_sd"><p style="text-align: center; margin-left: 50px; margin-bottom: 20px;">Saat ini berbagai macam merek keripik pedas bisa kita temukan di pasaran. Sebut saja keripik pedas Maicih, Kripik Setan, Keripik Jenglots, Kripik Goal, Keripik Mang Lada, dan masih banyak lagi merek keripik pedas lainnya yang bisa kita temukan di berbagai pelosok daerah. Rata-rata para produsen keripik pedas tersebut menawarkan tingkatan level pedas dari mulai level satu hingga level sepuluh, atau ada juga yang menawarkan level Dewa dan setengah Dewa untuk membedakan tingkat pedas yang ditawarkannya kepada para konsumen.Nah, bagi Anda yang tertarik mengangkat keripik singkong pedas sebagai peluang usaha. Berikut ini kami informasikan beberapa hal yang perlu Anda siapkan, sebelum memulai usaha tersebut.
-        1. Pertama-tama ketahui jenis singkong yang berkualitas bagus. Lebih baik Anda bekerjasama langsung dengan petani singkong yang ada di kota Anda, untuk mendapatkan harga beli yang lebih miring dan kualitasnya benar-benar terjamin.
-        2. Persiapkan peralatan dan perlengkapan yang dibutuhkan untuk memproduksi keripik singkong pedas. Misalnya saja seperti mesin pengiris singkong (slicer), mesin pengemas (sealer), alat penggorengan, plastik kemasan, dll.
-        3. Tingkatkan pengetahuan dan keterampilan Anda dalam mengolah keripik singkong. Pastikan keripik singkong yang Anda hasilkan memiliki tekstur yang renyah dan cita rasa pedasnya memberikan sensasi berbeda bagi lidah para konsumen.Usaha ini merupakan usaha penjualan keripik yang ada jember. sistem ini merupakan sistme jasa pengantar pembelian ikan kepada konsumen. Dan sistem ini digunakan untuk meningkatkan penjualan ikan dengan mudah dan meningkatkan kesejahteraan para pengguna. Juga berdampak pada peningkatan penjualan dan efisiensi waktu dalam pemesanan keripik. Memudahkan pelanggan dalam melihat jumlah stok ikan yang ada. Sehingga menghindari kemungkinan kelebihan pesanan yang dapat mengurangi kadar kepercayaan pelanggan terhadap Penjual.</p></div>
+        <div class="box_sd" style="text-align: center; margin-left: 70px; margin-bottom: 20px; margin-right: 70px;">
+          <p>Saat ini berbagai macam merek keripik pedas bisa kita temukan di pasaran. Sebut saja keripik pedas Maicih, Kripik Setan, Keripik Jenglots, Kripik Goal, Keripik Mang Lada, dan masih banyak lagi merek keripik pedas lainnya yang bisa kita temukan di berbagai pelosok daerah. Rata-rata para produsen keripik pedas tersebut menawarkan tingkatan level pedas dari mulai level satu hingga level sepuluh, atau ada juga yang menawarkan level Dewa dan setengah Dewa untuk membedakan tingkat pedas yang ditawarkannya kepada para konsumen.Nah, bagi Anda yang tertarik mengangkat keripik singkong pedas sebagai peluang usaha. Berikut ini kami informasikan beberapa hal yang perlu Anda siapkan, sebelum memulai usaha tersebut.
+          <p> 1. Pertama-tama ketahui jenis singkong yang berkualitas bagus. Lebih baik Anda bekerjasama langsung dengan petani singkong yang ada di kota Anda, untuk mendapatkan harga beli yang lebih miring dan kualitasnya benar-benar terjamin.
+          <p> 2. Persiapkan peralatan dan perlengkapan yang dibutuhkan untuk memproduksi keripik singkong pedas. Misalnya saja seperti mesin pengiris singkong (slicer), mesin pengemas (sealer), alat penggorengan, plastik kemasan, dll.
+          <p> 3. Tingkatkan pengetahuan dan keterampilan Anda dalam mengolah keripik singkong. Pastikan keripik singkong yang Anda hasilkan memiliki tekstur yang renyah dan cita rasa pedasnya memberikan sensasi berbeda bagi lidah para konsumen.Usaha ini merupakan usaha penjualan keripik yang ada jember. sistem ini merupakan sistme jasa pengantar pembelian ikan kepada konsumen. Dan sistem ini digunakan untuk meningkatkan penjualan ikan dengan mudah dan meningkatkan kesejahteraan para pengguna. Juga berdampak pada peningkatan penjualan dan efisiensi waktu dalam pemesanan keripik. Memudahkan pelanggan dalam melihat jumlah stok ikan yang ada. Sehingga menghindari kemungkinan kelebihan pesanan yang dapat mengurangi kadar kepercayaan pelanggan terhadap Penjual.</p>
         </div>
     </div>
 </div>
@@ -162,6 +150,30 @@
     <p class="fl_left">Copyright &copy; 2019 - Kelompok 4 - <a href="#">Kelas C</a></p>
   </div> 
 </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+function openFormdaftar() {
+  document.getElementById("myFormdaftar").style.display = "block";
+}
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+function closeForm2() {
+  document.getElementById("myFormdaftar").style.display = "none";
+}
+</script>
 
 <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
 <!-- JAVASCRIPTS -->
