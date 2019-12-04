@@ -104,3 +104,10 @@
     width: 95%;
     margin: auto;
 }
+
+.wrapper {
+    text-align: left;
+    word-wrap: break-word;
+}
+    #comments ul{margin:0 0 40px 0; padding:0; list-style:none;}
+    tr, #comments li, #comments input[type="submit"], #comments input[type="reset"]{color:inherit; background-color:#eef5f6;}
