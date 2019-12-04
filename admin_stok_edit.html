@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tambah Produk</title>
+	<title>Edit Produk</title>
   <link rel="stylesheet" href="css/side_bar.css">
-   <link rel="stylesheet" href="css/tampilan.css">
-   <link rel="stylesheet" href="css/form.css">
-</head>
+  <link rel="stylesheet" href="css/tampilan.css">
+  <link rel="stylesheet" href="css/form.css">
 <body>
 
 <div class="sidenav" >
@@ -21,11 +20,12 @@
 <div class="main">
   <div class="kotak">
     <div class="kotak_putih">
-          <h3>Tambah Data Produk Baru</h3>
+          <h3>Edit Data Produk Baru</h3>
           <form>
-            <div class="form_item">
+              <div class="form_item">
+                <img src="img/Produk/1.jpg" style="width: 200px; height: 150px;">
               <label>Upload Foto Produk</label>
-              <input type="file" name="foto" accept="image/*" required>
+              <input type="file" name="foto" accept="image/*">
               <div id="preview_foto">
                 <span>Tidak Ada File Terpilih</span>
               </div>
@@ -36,22 +36,22 @@
             <br>
             <div class="form_item">
               <label>Nama Produk</label>
-              <input type="text" name="Produk" required>
+              <input type="text" name="Produk" value="Kripik Singkong Original" required>
             </div>
             <br>
             <div class="form_item">
               <label>Jumlah Stok</label>
-              <input type="text" name="Produk" required>
+              <input type="text" name="Produk" value="200" required>
             </div>
             <br>
             <div class="form_item">
-              <label>Harga</label>
-              <input type="text" name="Produk" required>
+              <label>Harga/kg</label>
+              <input type="text" name="Produk" value="15000" required>
             </div>
             <br>
             <div class="form_item">
               <label>Deskripsi</label>
-              <textarea type="text" name="Produk" required></textarea>
+              <textarea required>Ada banyak sekali keripik yang ada saat ini dan hal itu membuat persaingan dalam dunia bisnis keripik semakin tinggi tingkat persaingan nya, ada keripik kentang, keripik sayur dan lain sebagainya, namun yang paling banyak di cari saat ini adalah keripik singkong karena memang bahan pembuatan nya cukup mudah di cari serta keripik singkong memiliki rasa khas tersendiri</textarea>
             </div>
             <br>
 
