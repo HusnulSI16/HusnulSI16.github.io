@@ -1,6 +1,6 @@
 
 #wrap{ width:100%; min-height:900px; top:0px; position:relative; bottom:0px; }
-#wrap ul{ margin:0px; padding:0px; width: 700px;text-align:center;  }
+#wrap ul{ margin:0px; padding:0px; width:60%;text-align:center;  }
 
 #wrap .detail-view {
    /* background: none repeat scroll 0 0 #F3F4EE;*/
@@ -13,7 +13,7 @@
 	display:none;
 	margin-left:13px;
 	margin-bottom:15px;
-    width: 96%;
+    width: 83%;
 }
 
 #wrap .detail-view .close{ text-align:right; width:98%; margin:5px; }
