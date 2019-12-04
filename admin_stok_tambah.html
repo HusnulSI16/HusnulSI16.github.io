@@ -12,7 +12,7 @@
   <img src="img/Admin.GIF" style=" width: 150px; height: 150px; border-radius: 50%">
     <a href="Admin.html">Pesan</a>
     <a href="admin_stok.html">Stok</a>
-    <a href="admin_penjualan.html">Pemesanan</a>
+    <a href="admin_pemesanan.html">Pemesanan</a>
       <a href="admin_laporan.html">Laporan</a>
       <a href="admin_pengguna.html">Pengguna</a>
       <a href="index.html">Keluar</a>
@@ -22,7 +22,7 @@
   <div class="kotak">
     <div class="kotak_putih">
           <h3>Tambah Data Produk Baru</h3>
-          <form>
+          <form action="admin_stok.html" class="form-container">
             <div class="form_item">
               <label>Upload Foto Produk</label>
               <input type="file" name="foto" accept="image/*" required>
@@ -41,12 +41,12 @@
             <br>
             <div class="form_item">
               <label>Jumlah Stok</label>
-              <input type="text" name="Produk" required>
+              <input type="number" name="Produk" required>
             </div>
             <br>
             <div class="form_item">
-              <label>Harga</label>
-              <input type="text" name="Produk" required>
+              <label>Harga/kg</label>
+              <input type="number" name="Produk" required>
             </div>
             <br>
             <div class="form_item">
@@ -56,7 +56,7 @@
             <br>
 
             <div class="form_item" id="submit_form">
-              <button type="submit" href="#" class="tmbl tmbl_tambah">Simpan</button>
+              <button type="submit" class="tmbl tmbl_tambah">Simpan</button>
             </div>
           </form>
         </div>

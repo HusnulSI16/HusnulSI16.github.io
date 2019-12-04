@@ -1,17 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 <head>
-	<title>user keranjang</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta charset="UTF-8">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="./css/stylecart.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
   <link rel="stylesheet" type="text/css" href="css/css.css">
   <link rel="stylesheet" type="text/css" href="css/topnav.css">
   <link rel="stylesheet" type="text/css" href="css/tampilan.css">
   <link href="css/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=entypo">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/5175/utf-latest.min.css'>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js">
+  
+</script>
 </head>
-
 <body>
-
-	<div class="topnav" id="myTopnav">
+  <div class="topnav" id="myTopnav">
   <a href="#login_form"">Keluar</a>
   <a href="user_profil.html">Profil</a>
   <a href="user_pesan.html">Pesan</a>
@@ -23,70 +30,60 @@
   </a>
 </div>
 
-<!--konten-->
 <div class="kotak">
     <div class="kotak_putih">
-<h2 style="padding: 20px;">Data Pemesanan</h2>
-	<table class="tabel">
-		<tr>
-			<th>id</th>
-			<th>Nama</th>
-			<th>Jumlah</th>
-			<th>Berat satuan</th>
-			<th>Harga</th>
-			<th>Status</th>
-		</tr>
-			
-		<tr>
-			<td>1</td>
-			<td>Keripik Talas</td>
-			<td>10</td>
-			<td>200 gram</td>
-			<td>10000</td>
-			<td><button class="btn-blue">Beli</button></td>
-		</tr>
-		<tr>
-			<td>2</td>
-			<td>Keripik Singkong</td>
-			<td>4</td>
-			<td>100 gram</td>
-			<td>10000</td>
-			<td><button class="btn-blue">Beli</button></td>
-		</tr>
-			<tr>
-			<td>3</td>
-			<td>Keripik ubi</td>
-			<td>15</td>
-			<td>500 gr</td>
-			<td>10000</td>
-			<td><button class="btn-blue">Beli</button></td>
-		</tr>
-			<tr>
-			<td>4</td>
-			<td>Keripik Pisang</td>
-			<td>30</td>
-			<td>100 gr</td>
-			<td>10000</td>
-			<td><button class="btn-blue">Beli</button></td>
-		</tr>
-		<tr>
-			<td>3</td>
-			<td>Keripik ubi</td>
-			<td>15</td>
-			<td>500 gr</td>
-			<td>10000</td>
-			<td><button class="btn-blue">Beli</button></td>
-		</tr>
-	</table>
+  <div class="main">
+  <h1>Shopping cart</h1>
+  <section class="shopping-cart">
+    <ol class="ui-list shopping-cart--list" id="shopping-cart--list">
 
-	<div class="">
-		<button class="btn-blue">Tambah</button>
-	</div>
-	</div>
-	</div>
+      <script id="shopping-cart--list-item-template" type="text/template">
+        <li class="_grid shopping-cart--list-item">
+          <div class="_column product-image">
+            <img class="product-image--img" src="{{=img}}" alt="Item image" />
+          </div>
+          <div class="_column product-info">
+            <h4 class="product-name">{{=name}}</h4>
+            <p class="product-desc">{{=desc}}</p>
+            <div class="price product-single-price">Rp.{{=price}}</div>
+          </div>
+          <div class="_column product-modifiers" data-product-price="{{=price}}">
+            <div class="_grid">
+              <button class="_btn _column product-subtract">&minus;</button>
+              <div class="_column product-qty">0</div>
+              <button class="_btn _column product-plus">&plus;</button>
+            </div>
+            <button class="_btn entypo-trash product-remove">Remove</button>
+            <div class="price product-total-price">$0.00</div>
+          </div>
+        </li>
+      </script>
 
-<script>
-	function myFunction() {
+    </ol>
+
+    <footer class="_grid cart-totals">
+      <div class="_column subtotal" id="subtotalCtr">
+        <div class="cart-totals-key">Subtotal</div>
+        <div class="cart-totals-value">$0.00</div>
+      </div>
+      <div class="_column taxes" id="taxesCtr">
+        <div class="cart-totals-key">Taxes (6%)</div>
+        <div class="cart-totals-value">$0.00</div>
+      </div>
+      <div class="_column total" id="totalCtr">
+        <div class="cart-totals-key">Total</div>
+        <div class="cart-totals-value">$0.00</div>
+      </div>
+      <div class="_column checkout">
+        <button class="_btn checkout-btn entypo-forward">Checkout</button>
+      </div>
+    </footer>
+
+  </section>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js'>
+      function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
@@ -94,6 +91,8 @@
     x.className = "topnav";
   }
 }
-</script>
+  </script>
+  <script  src="./css/scripts/script.js"></script>
+
 </body>
 </html>
