@@ -41,7 +41,7 @@ h1, .sub-heading {
   border: none;
   padding: .5em .75em;
   text-align: center;
-  font-weight: 300;
+  font-weight: 200;
 }
 ._btn:hover,
 .cart-totals:hover ._btn {
@@ -88,7 +88,7 @@ h1, .sub-heading {
  * @extends: _column;
  */
 .product-info {
-  width: 70.832119%;
+  width: 70%;
   padding: .5rem;
 }
 .product-name {

@@ -111,3 +111,36 @@
 }
     #comments ul{margin:0 0 40px 0; padding:0; list-style:none;}
     tr, #comments li, #comments input[type="submit"], #comments input[type="reset"]{color:inherit; background-color:#eef5f6;}
+
+.form{
+    padding: 20px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.form_item{
+    display: block;
+    margin: auto;
+}
+
+.form_item label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form_item input, .form_item select, .form_item textarea{
+    padding: 8px;
+    width: 95%;
+}
+
+#submit_form{
+    float: right;
+    margin-top: 30px;
+}
+#span{
+      margin: auto;
+      padding: 8px;
+      border: 1px solid #ccc;
+      font-size: 18px;
+    }
