@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>User Profil</title>
+	<title>Detail Pembayaran</title>
   <link rel="stylesheet" type="text/css" href="css/css.css">
   <link rel="stylesheet" type="text/css" href="css/topnav.css">
   <link rel="stylesheet" type="text/css" href="css/tampilan.css">
@@ -26,12 +26,11 @@
 <div class="kotak">
     <div class="kotak_putih">
 			<div class="personal">
-        <h3 style="text-align: center;">Data Diri</h3> <hr>
-				<img src="img/pelanggan.jpg" style="width: 200px; height: 200px; padding: 20px; border-radius: 50%;">
-        <input type="file" name="foto" accept="image/*" required>
+        <h3 style="text-align: center;">Detail Pembayaran</h3> <hr>
           <form>
+            <br>
             <div class="form_item">
-              <label>Nama</label>
+              <label>Nama Penerima</label>
               <input type="text" name="nama" value="Husnul Hotimatus Sahroh" required>
             </div>
             <br>
@@ -41,22 +40,48 @@
             </div>
             <br>
             <div class="form_item">
-              <label>Alamat</label>
+              <label>Alamat Detail</label>
               <input type="text" name="nama" value="Jalan Serma Moch Ahdar Antirogo jember" required>
+              <br>
+              <label>Provinsi</label>
+                <select>
+                <option>Pilih Provinsi</option>
+                <option>Jawa Timur</option>
+                <option>Jawa Barat</option>
+              </select><br>
+              <label>Kabupaten</label>
+                <select>
+                <option>Pilih Kabupaten</option>
+                <option>Jember</option>
+                <option>Lumajang</option>
+              </select><br>              
+              <label>Kecamatan</label>
+                <select>
+                <option>Pilih Kecamatan</option>
+                <option>Sumbersari</option>
+                <option>Kalisat</option>
+              </select>
+           </div>
+           <label>Total Produk</label>
+          <div id="span" id="totalCtr">
+            <span>Rp. 20000</span>
+          </div>
+            <label>Biaya Pengiriman</label>
+          <div id="span" id="totalCtr">
+            <span>Rp. 11000</span>
+          </div>
+            <label>Total Pembayaran</label>
+          <div id="span" id="totalCtr">
+            <span>Rp. 31000</span>
             </div>
-            <br>
-            <div class="form_item">
-              <label>E-mail</label>
-              <input type="text" name="nama" value="Husnul@gmail.com" required>
-            </div>
-            <br>
-            <label>Status</label>
-            <div id="span">
-            <span>Aktif</span>
-            </div>
-            <br>                
+
+            <label>Sistem Pembayaran</label>
+            <div id="span" id="totalCtr">
+            <span>COD/Bayar Ditempat</span>
+            </div> 
+
             <div class="form_item" id="submit_form">
-              <button type="submit" href="#" class="tmbl tmbl_tambah">Perbaharui</button>
+              <button type="submit" href="#" class="tmbl tmbl_tambah">Pesan</button>
             </div>
           </form>
 			</div>

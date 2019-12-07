@@ -2,20 +2,13 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
   <title>Shopping Cart</title>
   <link rel="stylesheet" href="./css/stylecart.css">
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-  <link rel="stylesheet" type="text/css" href="css/css.css">
   <link rel="stylesheet" type="text/css" href="css/topnav.css">
   <link rel="stylesheet" type="text/css" href="css/tampilan.css">
   <link href="css/layout.css" rel="stylesheet" type="text/css" media="all">
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=entypo">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/5175/utf-latest.min.css'>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js">
-  
-</script>
 </head>
 <body>
   <div class="topnav" id="myTopnav">
@@ -33,7 +26,7 @@
 <div class="kotak">
     <div class="kotak_putih">
   <div class="main">
-  <h1>Shopping cart</h1>
+  <h1>Keranjang Saya</h1>
   <section class="shopping-cart">
     <ol class="ui-list shopping-cart--list" id="shopping-cart--list">
 
@@ -62,12 +55,13 @@
     </ol>
 
     <footer class="_grid cart-totals">
+      <form action="user_pembelian_detail.html">
       <div class="_column subtotal" id="subtotalCtr">
         <div class="cart-totals-key">Subtotal</div>
         <div class="cart-totals-value">$0.00</div>
       </div>
-      <div class="_column taxes" id="taxesCtr">
-        <div class="cart-totals-key">Taxes (6%)</div>
+      <div class="_column taxes" id="AdminCtr">
+        <div class="cart-totals-key">Biaya Admin COD</div>
         <div class="cart-totals-value">$0.00</div>
       </div>
       <div class="_column total" id="totalCtr">
