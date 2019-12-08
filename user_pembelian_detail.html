@@ -27,7 +27,7 @@
     <div class="kotak_putih">
 			<div class="personal">
         <h3 style="text-align: center;">Detail Pembayaran</h3> <hr>
-          <form>
+          <form action="user_pembelian.html">
             <br>
             <div class="form_item">
               <label>Nama Penerima</label>
@@ -36,7 +36,7 @@
             <br>
             <div class="form_item">
               <label>Nomor Telepon</label>
-              <input type="text" name="nama" value="0987654321" required>
+              <input type="number" name="nama" value="0987654321" required>
             </div>
             <br>
             <div class="form_item">
@@ -74,12 +74,14 @@
           <div id="span" id="totalCtr">
             <span>Rp. 31000</span>
             </div>
-
             <label>Sistem Pembayaran</label>
             <div id="span" id="totalCtr">
             <span>COD/Bayar Ditempat</span>
             </div> 
-
+            <div class="form_item">
+              <label>Pesan</label>
+              <textarea> </textarea>
+            </div>
             <div class="form_item" id="submit_form">
               <button type="submit" href="#" class="tmbl tmbl_tambah">Pesan</button>
             </div>

@@ -23,10 +23,10 @@
           <form action="admin_stok.html" class="form-container">
             <div class="form_item">
               <label>Upload Foto Produk</label>
-              <input type="file" name="foto" accept="image/*" required>
-              <div id="file_info">
-                
-              </div>
+              <input type='file' onchange="readURL(this);" required><br><br>
+              <div id="span">
+            <span><img id="blah" src="http://placehold.it/180" alt="Tidak Ada File"></span>
+            </div>
             </div>
             <br>
             <div class="form_item">
@@ -58,6 +58,7 @@
       </div>
       </div>
 
-   
+  <script src="./css/scripts/jquery.min.js"></script>
+  <script  src="./css/scripts/viewscript.js"></script>
 </body>
 </html> 
