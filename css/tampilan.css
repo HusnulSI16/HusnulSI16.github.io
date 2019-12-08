@@ -139,8 +139,16 @@
     margin-top: 30px;
 }
 #span{
-      margin: auto;
-      padding: 8px;
+      width: 95%;
+      padding: 6px;
       border: 1px solid #ccc;
       font-size: 18px;
     }
+
+img{
+    max-width:180px;
+}
+input[type=file]{
+    padding:10px;
+    background:#b8bfcc;
+}
