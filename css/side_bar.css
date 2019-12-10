@@ -75,6 +75,7 @@ tr:nth-child(even) {
     .cari_wraper input{
       padding: 7px;
       border: 1px solid #ccc;
+      width: 150%;
     }
 
     .cari_wraper a {

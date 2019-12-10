@@ -1,11 +1,11 @@
 .badan
 {
-    width: 100%;
-    margin: 35px auto;
+    width: 115%;
+    margin: 30px auto;
     background-color: white;
     overflow: hidden;
 }
- 
+
 .badan h2
 {
     color: crimson;
@@ -13,7 +13,7 @@
     margin: 5px;
     margin-bottom: 13px;
 }
- 
+
 .list-produk
 {
     border: 1px solid gainsboro;
@@ -22,13 +22,13 @@
     width: 200px;
     margin: 5px;
 }
- 
+
 .list-produk:hover
 {
     transition-duration: 700ms;
     box-shadow: 5px 5px gainsboro;
 }
- 
+
 .list-produk img
 {
     width: 100%;
@@ -36,14 +36,14 @@
     display: block;
     margin-bottom: 5px;
 }
- 
+
 .list-produk h4, .list-produk h5
 {
     color: crimson;
     text-align: center;
     margin-bottom: 5px;
 }
- 
+
 .tombol
 {
     text-decoration: none;
@@ -51,23 +51,23 @@
     padding: 7px;
     display: block;
     float: left;
-    width: 45%;
+    width: 60%;
     margin: 3px;
     text-align: center;
     color: white;
 }
- 
+
 .tombol:hover
 {
     background-color: black;
     transition-duration: 50ms;
 }
- 
+
 .tombol-detail
 {
     background-color: #2bbdd5;
 }
- 
+
 .tombol-beli
 {
     background-color: #429916;
@@ -79,7 +79,7 @@
     border-radius: 7px;
     color: white;
     cursor: pointer;
-     padding: 7px;
+    padding: 7px;
 }
 .tmbl:hover
 {
@@ -105,12 +105,9 @@
     margin: auto;
 }
 
-.wrapper {
-    text-align: left;
-    word-wrap: break-word;
-}
-    #comments ul{margin:0 0 40px 0; padding:0; list-style:none;}
-    tr, #comments li, #comments input[type="submit"], #comments input[type="reset"]{color:inherit; background-color:#eef5f6;}
+#comments ul{margin:0 0 40px 0; padding:0; list-style:none;}
+tr, #comments li, #comments input[type="submit"], 
+#comments input[type="reset"]{color:inherit; background-color:#f2f2f2;}
 
 .form{
     padding: 20px;
@@ -139,11 +136,11 @@
     margin-top: 30px;
 }
 #span{
-      width: 95%;
-      padding: 6px;
-      border: 1px solid #ccc;
-      font-size: 18px;
-    }
+  width: 95%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+}
 
 img{
     max-width:180px;
@@ -151,4 +148,35 @@ img{
 input[type=file]{
     padding:10px;
     background:#b8bfcc;
+}
+
+.pagination {
+  display: inline-block;
+  margin-left: 400px;
+
+}
+
+.pagination a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+}
+
+.pagination a.active {
+  background-color: #245EE9;
+  color: white;
+  border: 1px solid #245EE9;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.pagination a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }

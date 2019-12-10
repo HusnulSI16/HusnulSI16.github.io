@@ -8,7 +8,7 @@
   position: fixed;
   border: 3px solid #f1f1f1;
   z-index: 9;
-  margin:none;
+  /*margin:none;*/
   left: 40%;
 }
 
@@ -22,8 +22,8 @@
 /* Full-width input fields */
 .form-container input[type=text], .form-container input[type=password] {
   width: 100%;
-  padding: 8px;
-  margin: 2px 0 18px 0;
+  padding: 6px;
+  margin: 2px 0 16px 0;
   border: none;
   background: #f1f1f1;
 }
@@ -38,7 +38,7 @@
 .form-container .btn {
   background-color: #1B80D7;
   color: white;
-  padding: 8px 10px;
+  padding: 6px 8px;
   border: none;
   cursor: pointer;
   width: 100%;
@@ -48,7 +48,7 @@
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-  background-color: red;
+  background-color: #e63711;
 }
 
 /* Add some hover effects to buttons */
