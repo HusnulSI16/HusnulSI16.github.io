@@ -2,164 +2,152 @@
 <head>
   <title>User Pesan</title>
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-  <link rel="stylesheet" type="text/css" href="css/css.css">
   <link rel="stylesheet" type="text/css" href="css/topnav.css">
   <link rel="stylesheet" type="text/css" href="css/tampilan.css">
   <link rel="stylesheet" type="text/css" href="css/notification.css">
   <link rel="stylesheet" type="text/css" href="css/layout.css" media="all">
 </head>
 <body id="top">
-<!-- #####################################vavbar########################################################### -->
+  <!-- #####################################vavbar########################################################### -->
   <div class="topnav" id="myTopnav">
-  <a href="#login_form"">Keluar</a>
-  <a href="user_profil.html">Profil</a>
-  <a href="user_pesan.html" class="notification"><span>Pesan</span><span class="badge">2</span></a>
-  <a href="user_pembelian.html">Pesanan Saya</a>
-  <a href="user_keranjang.html">Keranjang</a>
-  <a href="user_home.html">Beranda</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
+    <a href="index.html">Keluar</a>
+    <a href="user_profil.html">Profil</a>
+    <a href="user_pesan.html" class="notification"><span>Pesan</span><span class="badge">2</span></a>
+    <a href="user_pembelian.html">Pesanan Saya</a>
+    <a href="user_keranjang.html">Keranjang</a>
+    <a href="user_home.html">Beranda</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i></a>
+    </div>
   </div>
 
-<div class="wrapper row3">
-  <main class="hoc container clear"> 
-    <!-- #############################main body ################################################################### -->
-    <div class="content"> 
-      <div id="comments">
-        <h2>Chat Admin</h2>
-        <ul>
-          <li>
-            <article>
-              <header>
-                <address>
-                By <a href="#">Anda</a>
-                </address>
-                <time datetime="2045-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2045 @08:15:00</time>
-              </header>
-              <img src="img/produk/3.jpg" style="width: 200px; height: 200px; padding: 20px;">
-              <div class="comcont">
-                <p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
-              </div>
-            </article>
-          </li>
-          <li>
-            <article>
-              <header>
-                <address>
-                By <a href="#">Admin</a>
-                </address>
-                <time datetime="2045-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2045 @08:15:00</time>
-              </header>
-              <div class="comcont">
-                <p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
-              </div>
-            </article>
-          </li>
-        </ul>
-        <h2>Berikan Penilaian Anda</h2>
-        <form action="#" method="post">
-          <div class="block clear">
-            <input type='file' onchange="readURL(this);" required><br>
+  <div class="wrapper row3">
+    <main class="hoc container clear"> 
+        <div id="comments">
+          <h2>Chat Admin</h2>
+          <ul>
+            <li>
+                <header>
+                  <address>
+                    By <a href="#">Anda</a>
+                  </address>
+                  <time datetime="2045-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2045 @08:15:00</time>
+                </header>
+                <img src="img/produk/3.jpg" style="width: 200px; height: 200px; padding: 20px;">
+                <div class="comcont">
+                  <p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
+                </div>
+            </li>
+            <li>
+                <header>
+                  <address>
+                    By <a href="#">Admin</a>
+                  </address>
+                  <time datetime="2045-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2045 @08:15:00</time>
+                </header>
+                <div class="comcont">
+                  <p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
+                </div>
+            </li>
+          </ul>
+          <h2>Berikan Penilaian Anda</h2>
+          <form action="#" method="post">
+            <div class="block clear">
+              <input type='file' onchange="readURL(this);" required><br>
               <div id="span">
-            <span><img id="blah" style="width: 200px; height: 200px;" alt="Tidak Ada File"></span>
-            </div>
-          <form>
-            <label for="comment">Pesan Anda</label>
-            <textarea name="comment" id="comment" cols="25" rows="10"></textarea>
+                <span><img id="blah" style="width: 200px; height: 200px;" alt="Tidak Ada File"></span>
+              </div>
+              <form>
+                <label for="comment">Pesan Anda</label>
+                <textarea name="comment" id="comment" cols="25" rows="10"></textarea>
+              </div>
+              <div>
+                <input type="submit" name="submit" value="Submit Form">
+                &nbsp;
+                <input type="reset" name="reset" value="Reset Form">
+              </div>
+            </form>
           </div>
-          <div>
-            <input type="submit" name="submit" value="Submit Form">
-            &nbsp;
-            <input type="reset" name="reset" value="Reset Form">
-          </div>
-        </form>
+        </div>
+        <div class="clear"></div>
+
+    <!-- ###########################################footer######################################################## -->
+    <div class="wrapper row4">
+      <footer id="footer" class="hoc clear"> 
+        <div class="one_third first">
+          <h6 class="heading">Luctus turpis interdum</h6>
+          <ul class="nospace btmspace-30 linklist contact">
+            <li><i class="fa fa-map-marker"></i>
+              <address>
+                Jl.Kalimatan 34 Kampus Universitas Jember, 68125
+              </address>
+            </li>
+            <li><i class="fa fa-phone"></i> +62 (0331) 4858675</li>
+            <li><i class="fa fa-envelope-o"></i> unej.ac.id@gmail.com</li>
+          </ul>
+          <ul class="faico clear">
+            <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+          </ul>
+        </div>
+        <div class="one_third">
+          <h6 class="heading">Facilisis morbi interdum</h6>
+          <ul class="nospace linklist">
+            <li>
+              <article>
+                <h2 class="nospace font-x1"><a href="#">volutpat maximus vel</a></h2>
+                <time class="font-xs block btmspace-10" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
+                <p class="nospace">Primis in faucibus nam dictum malesuada dictum maecenas in magna arcu [&hellip;]</p>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h2 class="nospace font-x1"><a href="#">et malesuada fames ante</a></h2>
+                <time class="font-xs block btmspace-10" datetime="2045-04-05">Thursday, 5<sup>th</sup> April 2045</time>
+                <p class="nospace">Nullam tortor ligula lobortis pharetra leo vel malesuada auctor odio nunc [&hellip;]</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+        <div class="one_third">
+          <h6 class="heading">Justo condimentum tortor</h6>
+          <p class="nospace btmspace-30">Non condimentum lectus proin consequat eleifend elementum quisque nulla.</p>
+          <form method="post" action="#">
+            <fieldset>
+              <legend>Newsletter:</legend>
+              <input class="btmspace-15" type="text" value="" placeholder="Name">
+              <input class="btmspace-15" type="text" value="" placeholder="Email">
+              <button type="submit" value="submit">Submit</button>
+            </fieldset>
+          </form>
+        </div>
+      </footer>
+    </div>
+    <div class="wrapper row5">
+      <div id="copyright" class="hoc clear"> 
+        <p class="fl_left">Copyright &copy; 2019 - Kelompok 4 - <a href="#">Kelas C</a></p>
       </div>
     </div>
-
-    <!-- / main body -->
-    <div class="clear"></div>
-  </main>
-</div>
-
- <!-- ###########################################footer######################################################## -->
-    <div class="wrapper row4">
-  <footer id="footer" class="hoc clear"> 
-    <div class="one_third first">
-      <h6 class="heading">Luctus turpis interdum</h6>
-      <ul class="nospace btmspace-30 linklist contact">
-        <li><i class="fa fa-map-marker"></i>
-          <address>
-          Jl.Kalimatan 34 Kampus Universitas Jember, 68125
-          </address>
-        </li>
-        <li><i class="fa fa-phone"></i> +62 (0331) 4858675</li>
-        <li><i class="fa fa-envelope-o"></i> unej.ac.id@gmail.com</li>
-      </ul>
-      <ul class="faico clear">
-        <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
-        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-        <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
-      </ul>
-    </div>
-    <div class="one_third">
-      <h6 class="heading">Facilisis morbi interdum</h6>
-      <ul class="nospace linklist">
-        <li>
-          <article>
-            <h2 class="nospace font-x1"><a href="#">volutpat maximus vel</a></h2>
-            <time class="font-xs block btmspace-10" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
-            <p class="nospace">Primis in faucibus nam dictum malesuada dictum maecenas in magna arcu [&hellip;]</p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <h2 class="nospace font-x1"><a href="#">et malesuada fames ante</a></h2>
-            <time class="font-xs block btmspace-10" datetime="2045-04-05">Thursday, 5<sup>th</sup> April 2045</time>
-            <p class="nospace">Nullam tortor ligula lobortis pharetra leo vel malesuada auctor odio nunc [&hellip;]</p>
-          </article>
-        </li>
-      </ul>
-    </div>
-    <div class="one_third">
-      <h6 class="heading">Justo condimentum tortor</h6>
-      <p class="nospace btmspace-30">Non condimentum lectus proin consequat eleifend elementum quisque nulla.</p>
-      <form method="post" action="#">
-        <fieldset>
-          <legend>Newsletter:</legend>
-          <input class="btmspace-15" type="text" value="" placeholder="Name">
-          <input class="btmspace-15" type="text" value="" placeholder="Email">
-          <button type="submit" value="submit">Submit</button>
-        </fieldset>
-      </form>
-    </div>
-  </footer>
-</div>
-<div class="wrapper row5">
-  <div id="copyright" class="hoc clear"> 
-    <p class="fl_left">Copyright &copy; 2019 - Kelompok 4 - <a href="#">Kelas C</a></p>
-  </div>
-</div>
-<!-- ########################################script############################################### -->
-<script>
-  function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
-<!-- JAVASCRIPTS -->
-<script src="./css/scripts/jquery.min.js"></script>
-<script src="./css/scripts/jquery.backtotop.js"></script>
-<script src="./css/scripts/jquery.mobilemenu.js"></script>
-<script  src="./css/scripts/viewscript.js"></script>
-</body>
-</html>
+    <!-- ########################################script############################################### -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+    <!-- JAVASCRIPTS -->
+    <script src="./css/scripts/jquery.min.js"></script>
+    <script src="./css/scripts/jquery.backtotop.js"></script>
+    <script src="./css/scripts/jquery.mobilemenu.js"></script>
+    <script  src="./css/scripts/viewscript.js"></script>
+  </body>
+  </html>

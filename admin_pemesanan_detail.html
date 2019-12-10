@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tambah Produk</title>
+	<link rel="stylesheet" href="css/side_bar.css">
+	<link rel="stylesheet" href="css/tampilan.css">
+</head>
+<body>
+
+	<div class="sidenav" >
+		<img src="img/Admin.GIF" style=" width: 150px; height: 150px; border-radius: 50%">
+		<a href="Admin.html">Pesan</a>
+		<a href="admin_stok.html">Stok</a>
+		<a href="admin_pemesanan.html">Pemesanan</a>
+		<a href="admin_pengguna.html">Pengguna</a>
+		<a href="index.html">Keluar</a>
+	</div>
+
+	<div class="main">
+		<div class="kotak">
+			<div class="kotak_putih">
+				<h3 style="text-align: center;">Detail Pemesanan</h3> <hr>
+				<form action="admin_pemesanan.html"><br>
+					<table>
+						<tr>
+							<th>Produk</th>
+							<th>Nama</th>
+							<th>Jumlah/Kg</th>
+							<th>Harga/Kg</th>
+						</tr>
+						<tr>
+							<td><img src="img/produk/1.jpg" style=" width: 100px; height: 100px;"></td>
+							<td>Kripik Singkong Orginal</td>
+							<td>3</td>
+							<td>15000</td>
+						</tr>
+						<tr>
+							<td><img src="img/produk/4.jpg" style=" width: 100px; height: 100px;"></td>
+							<td>Kripik Singkong Pedas</td>
+							<td>2</td>
+							<td>30000</td>
+						</tr>
+					</table><br>
+					<label>Nama Penerima</label>
+					<div id="span">
+						<span> Husnul Hotimatus Sahroh</span>
+					</div>
+					<br>
+					<label>Nomor Telepon</label>
+					<div id="span">
+						<span>098765123456</span>
+					</div>
+					<br>
+					<label>Alamat Detail</label>
+					<div id="span">
+						<span>Jalan Serma Moch Ahdar Antirogo jember</span>
+					</div><br>
+					<label>Provinsi</label>
+					<div id="span">
+						<span>Jawa Timur</span>
+					</div><br>
+					<label>Kabupaten</label>
+					<div id="span">
+						<span>Jember</span>
+					</div><br>           
+					<label>Kecamatan</label>
+					<div id="span">
+						<span>Sumbersari</span>
+					</div><br>
+					<label>Total Produk</label>
+					<div id="span" id="totalCtr">
+						<span>Rp. 20000</span>
+					</div><br>
+					<label>Biaya Pengiriman</label>
+					<div id="span" id="totalCtr">
+						<span>Rp. 11000</span>
+					</div><br>
+					<label>Total Pembayaran</label>
+					<div id="span" id="totalCtr">
+						<span>Rp. 31000</span>
+					</div><br>
+					<label>Sistem Pembayaran</label>
+					<div id="span" id="totalCtr">
+						<span>COD/Bayar Ditempat</span>
+					</div> <br>
+					<div class="form_item" id="submit_form">
+						<button type="submit" href="#" class="tmbl tmbl_tambah">Verifikasi</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="./css/scripts/jquery.min.js"></script>
+	<script  src="./css/scripts/viewscript.js"></script>
+</body>
+</html> 

@@ -12,81 +12,80 @@
 </head>
 <body>
   <div class="topnav" id="myTopnav">
-  <a href="#login_form"">Keluar</a>
-  <a href="user_profil.html">Profil</a>
-  <a href="user_pesan.html">Pesan</a>
-  <a href="user_pembelian.html">Pesanan Saya</a>
-  <a href="user_keranjang.html">Keranjang</a>
-  <a href="user_home.html">Beranda</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
+    <a href="index.html"">Keluar</a>
+    <a href="user_profil.html">Profil</a>
+    <a href="user_pesan.html">Pesan</a>
+    <a href="user_pembelian.html">Pesanan Saya</a>
+    <a href="user_keranjang.html">Keranjang</a>
+    <a href="user_home.html">Beranda</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i></a>
+  </div>
 
-<div class="kotak">
+  <div class="kotak">
     <div class="kotak_putih">
-  <div class="main">
-  <h1>Keranjang Saya</h1>
-  <section class="shopping-cart">
-    <ol class="ui-list shopping-cart--list" id="shopping-cart--list">
+      <div class="main">
+        <h1>Keranjang Saya</h1>
+        <section class="shopping-cart">
+          <ol class="ui-list shopping-cart--list" id="shopping-cart--list">
 
-      <script id="shopping-cart--list-item-template" type="text/template">
-        <li class="_grid shopping-cart--list-item">
-          <div class="_column product-image">
-            <img class="product-image--img" src="{{=img}}" alt="Item image" />
-          </div>
-          <div class="_column product-info">
-            <h4 class="product-name">{{=name}}</h4>
-            <p class="product-desc">{{=desc}}</p>
-            <div class="price product-single-price">Rp.{{=price}}</div>
-          </div>
-          <div class="_column product-modifiers" data-product-price="{{=price}}">
-            <div class="_grid">
-              <button class="_btn _column product-subtract">&minus;</button>
-              <div class="_column product-qty">0</div>
-              <button class="_btn _column product-plus">&plus;</button>
-            </div>
-            <button class="_btn entypo-trash product-remove">Remove</button>
-            <div class="price product-total-price">$0.00</div>
-          </div>
-        </li>
-      </script>
+            <script id="shopping-cart--list-item-template" type="text/template">
+              <li class="_grid shopping-cart--list-item">
+                <div class="_column product-image">
+                  <img class="product-image--img" src="{{=img}}" alt="Item image" />
+                </div>
+                <div class="_column product-info">
+                  <h4 class="product-name">{{=name}}</h4>
+                  <p class="product-desc">{{=desc}}</p>
+                  <div class="price product-single-price">Rp.{{=price}}</div>
+                </div>
+                <div class="_column product-modifiers" data-product-price="{{=price}}">
+                  <div class="_grid">
+                    <button class="_btn _column product-subtract">&minus;</button>
+                    <div class="_column product-qty">0</div>
+                    <button class="_btn _column product-plus">&plus;</button>
+                  </div>
+                  <button class="_btn entypo-trash product-remove">Remove</button>
+                  <div class="price product-total-price">$0.00</div>
+                </div>
+              </li>
+            </script>
 
-    </ol>
+          </ol>
 
-    <footer class="_grid cart-totals">
-      <form action="user_pembelian_detail.html">
-      <div class="_column subtotal" id="subtotalCtr">
-        <div class="cart-totals-key">Subtotal</div>
-        <div class="cart-totals-value">$0.00</div>
-      </div>
-      <div class="_column taxes" id="AdminCtr">
-        <div class="cart-totals-key">Biaya Admin COD</div>
-        <div class="cart-totals-value">$0.00</div>
-      </div>
-      <div class="_column total" id="totalCtr">
-        <div class="cart-totals-key">Total</div>
-        <div class="cart-totals-value">$0.00</div>
-      </div>
-      <div class="_column checkout">
-        <button class="_btn checkout-btn entypo-forward">Checkout</button>
-      </div>
-    </footer>
+          <footer class="_grid cart-totals">
+            <form action="user_keranjang_bayar.html">
+              <div class="_column subtotal" id="subtotalCtr">
+                <div class="cart-totals-key">Subtotal</div>
+                <div class="cart-totals-value">$0.00</div>
+              </div>
+              <div class="_column taxes" id="AdminCtr">
+                <div class="cart-totals-key">Biaya Admin COD</div>
+                <div class="cart-totals-value">$0.00</div>
+              </div>
+              <div class="_column total" id="totalCtr">
+                <div class="cart-totals-key">Total</div>
+                <div class="cart-totals-value">$0.00</div>
+              </div>
+              <div class="_column checkout">
+                <button class="_btn checkout-btn entypo-forward">Checkout</button>
+              </div>
+            </footer>
 
-  </section>
-</div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js'>
-      function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-  </script>
-  <script  src="./css/scripts/script.js"></script>
+          </section>
+        </div>
+        <!-- partial -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js'>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+        </script>
+        <script  src="./css/scripts/script.js"></script>
 
-</body>
-</html>
+      </body>
+      </html>

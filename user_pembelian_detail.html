@@ -1,174 +1,127 @@
 <!DOCTYPE html>
-<html>
 <head>
-	<title>Detail Pembayaran</title>
-  <link rel="stylesheet" type="text/css" href="css/css.css">
+  <title>User Pesan</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
   <link rel="stylesheet" type="text/css" href="css/topnav.css">
   <link rel="stylesheet" type="text/css" href="css/tampilan.css">
-	<link rel="stylesheet" type="text/css" href="css/layout.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/notification.css">
+  <link rel="stylesheet" type="text/css" href="css/layout.css" media="all">
 </head>
-<body>
- 
- <!-- ################################################################################################ -->
- <div class="topnav" id="myTopnav">
-  <a href="#login_form"">Keluar</a>
-  <a href="user_profil.html">Profil</a>
-  <a href="user_pesan.html">Pesan</a>
-  <a href="user_pembelian.html">Pesanan Saya</a>
-  <a href="user_keranjang.html">Keranjang</a>
-  <a href="user_home.html">Beranda</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
+<body id="top">
+  <!-- #####################################vavbar########################################################### -->
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">Keluar</a>
+    <a href="user_profil.html">Profil</a>
+    <a href="user_pesan.html" class="notification"><span>Pesan</span><span class="badge">2</span></a>
+    <a href="user_pembelian.html">Pesanan Saya</a>
+    <a href="user_keranjang.html">Keranjang</a>
+    <a href="user_home.html">Beranda</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i></a>
+    </div>
   </div>
-<!--Konten-->		
-<div class="kotak">
-    <div class="kotak_putih">
-			<div class="personal">
-        <h3 style="text-align: center;">Detail Pembayaran</h3> <hr>
-          <form action="user_pembelian.html">
-            <br>
-            <div class="form_item">
-              <label>Nama Penerima</label>
-              <input type="text" name="nama" value="Husnul Hotimatus Sahroh" required>
-            </div>
-            <br>
-            <div class="form_item">
-              <label>Nomor Telepon</label>
-              <input type="number" name="nama" value="0987654321" required>
-            </div>
-            <br>
-            <div class="form_item">
-              <label>Alamat Detail</label>
-              <input type="text" name="nama" value="Jalan Serma Moch Ahdar Antirogo jember" required>
-              <br>
-              <label>Provinsi</label>
-                <select>
-                <option>Pilih Provinsi</option>
-                <option>Jawa Timur</option>
-                <option>Jawa Barat</option>
-              </select><br>
-              <label>Kabupaten</label>
-                <select>
-                <option>Pilih Kabupaten</option>
-                <option>Jember</option>
-                <option>Lumajang</option>
-              </select><br>              
-              <label>Kecamatan</label>
-                <select>
-                <option>Pilih Kecamatan</option>
-                <option>Sumbersari</option>
-                <option>Kalisat</option>
-              </select>
-           </div>
-           <label>Total Produk</label>
-          <div id="span" id="totalCtr">
-            <span>Rp. 20000</span>
+
+  <div class="wrapper row3">
+    <main class="hoc container clear"> 
+        <div id="comments">
+          <h2>Beri Ulasan</h2>
+          <form action="user_pembelian.html" method="post">
+            <div class="block clear">
+              <input type='file' onchange="readURL(this);"><br>
+              <div id="span">
+                <span><img id="blah" style="width: 200px; height: 200px;" alt="Tidak Ada File"></span>
+              </div>
+              <form>
+                <label for="comment">Pesan Anda</label>
+                <textarea name="comment" id="comment" cols="25" rows="10"></textarea>
+              </div>
+              <div>
+                <input type="submit" name="submit" value="Submit Form">
+                &nbsp;
+                <input type="reset" name="reset" value="Reset Form">
+              </div>
+            </form>
           </div>
-            <label>Biaya Pengiriman</label>
-          <div id="span" id="totalCtr">
-            <span>Rp. 11000</span>
-          </div>
-            <label>Total Pembayaran</label>
-          <div id="span" id="totalCtr">
-            <span>Rp. 31000</span>
-            </div>
-            <label>Sistem Pembayaran</label>
-            <div id="span" id="totalCtr">
-            <span>COD/Bayar Ditempat</span>
-            </div> 
-            <div class="form_item">
-              <label>Pesan</label>
-              <textarea> </textarea>
-            </div>
-            <div class="form_item" id="submit_form">
-              <button type="submit" href="#" class="tmbl tmbl_tambah">Pesan</button>
-            </div>
-          </form>
-			</div>
         </div>
-      </div>
+        <div class="clear"></div>
 
-    <!-- Footer
- ================================================== -->
+    <!-- ###########################################footer######################################################## -->
     <div class="wrapper row4">
-  <footer id="footer" class="hoc clear"> 
-    <!-- ################################################################################################ -->
-    <div class="one_third first">
-      <h6 class="heading">Luctus turpis interdum</h6>
-      <ul class="nospace btmspace-30 linklist contact">
-        <li><i class="fa fa-map-marker"></i>
-          <address>
-          Jl.Kalimatan 34 Kampus Universitas Jember, 68125
-          </address>
-        </li>
-        <li><i class="fa fa-phone"></i> +62 (0331) 4858675</li>
-        <li><i class="fa fa-envelope-o"></i> unej.ac.id@gmail.com</li>
-      </ul>
-      <ul class="faico clear">
-        <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
-        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-        <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
-      </ul>
+      <footer id="footer" class="hoc clear"> 
+        <div class="one_third first">
+          <h6 class="heading">Luctus turpis interdum</h6>
+          <ul class="nospace btmspace-30 linklist contact">
+            <li><i class="fa fa-map-marker"></i>
+              <address>
+                Jl.Kalimatan 34 Kampus Universitas Jember, 68125
+              </address>
+            </li>
+            <li><i class="fa fa-phone"></i> +62 (0331) 4858675</li>
+            <li><i class="fa fa-envelope-o"></i> unej.ac.id@gmail.com</li>
+          </ul>
+          <ul class="faico clear">
+            <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+          </ul>
+        </div>
+        <div class="one_third">
+          <h6 class="heading">Facilisis morbi interdum</h6>
+          <ul class="nospace linklist">
+            <li>
+              <article>
+                <h2 class="nospace font-x1"><a href="#">volutpat maximus vel</a></h2>
+                <time class="font-xs block btmspace-10" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
+                <p class="nospace">Primis in faucibus nam dictum malesuada dictum maecenas in magna arcu [&hellip;]</p>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h2 class="nospace font-x1"><a href="#">et malesuada fames ante</a></h2>
+                <time class="font-xs block btmspace-10" datetime="2045-04-05">Thursday, 5<sup>th</sup> April 2045</time>
+                <p class="nospace">Nullam tortor ligula lobortis pharetra leo vel malesuada auctor odio nunc [&hellip;]</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+        <div class="one_third">
+          <h6 class="heading">Justo condimentum tortor</h6>
+          <p class="nospace btmspace-30">Non condimentum lectus proin consequat eleifend elementum quisque nulla.</p>
+          <form method="post" action="#">
+            <fieldset>
+              <legend>Newsletter:</legend>
+              <input class="btmspace-15" type="text" value="" placeholder="Name">
+              <input class="btmspace-15" type="text" value="" placeholder="Email">
+              <button type="submit" value="submit">Submit</button>
+            </fieldset>
+          </form>
+        </div>
+      </footer>
     </div>
-    <div class="one_third">
-      <h6 class="heading">Facilisis morbi interdum</h6>
-      <ul class="nospace linklist">
-        <li>
-          <article>
-            <h2 class="nospace font-x1"><a href="#">volutpat maximus vel</a></h2>
-            <time class="font-xs block btmspace-10" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
-            <p class="nospace">Primis in faucibus nam dictum malesuada dictum maecenas in magna arcu [&hellip;]</p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <h2 class="nospace font-x1"><a href="#">et malesuada fames ante</a></h2>
-            <time class="font-xs block btmspace-10" datetime="2045-04-05">Thursday, 5<sup>th</sup> April 2045</time>
-            <p class="nospace">Nullam tortor ligula lobortis pharetra leo vel malesuada auctor odio nunc [&hellip;]</p>
-          </article>
-        </li>
-      </ul>
+    <div class="wrapper row5">
+      <div id="copyright" class="hoc clear"> 
+        <p class="fl_left">Copyright &copy; 2019 - Kelompok 4 - <a href="#">Kelas C</a></p>
+      </div>
     </div>
-    <div class="one_third">
-      <h6 class="heading">Justo condimentum tortor</h6>
-      <p class="nospace btmspace-30">Non condimentum lectus proin consequat eleifend elementum quisque nulla.</p>
-      <form method="post" action="#">
-        <fieldset>
-          <legend>Newsletter:</legend>
-          <input class="btmspace-15" type="text" value="" placeholder="Name">
-          <input class="btmspace-15" type="text" value="" placeholder="Email">
-          <button type="submit" value="submit">Submit</button>
-        </fieldset>
-      </form>
-    </div>
-  </footer>
-</div>
-<div class="wrapper row5">
-  <div id="copyright" class="hoc clear"> 
-    <p class="fl_left">Copyright &copy; 2019 - Kelompok 4 - <a href="#">Kelas C</a></p>
-  </div>
-</div>
-<script>
-  function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-
-<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
-<!-- ################################################################################################ -->
- <!-- JAVASCRIPTS -->
-<script src="layout/scripts/jquery.min.js"></script>
-<script src="layout/scripts/jquery.backtotop.js"></script>
-<script src="layout/scripts/jquery.mobilemenu.js"></script>
-</body>
-</html>
+    <!-- ########################################script############################################### -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+    <!-- JAVASCRIPTS -->
+    <script src="./css/scripts/jquery.min.js"></script>
+    <script src="./css/scripts/jquery.backtotop.js"></script>
+    <script src="./css/scripts/jquery.mobilemenu.js"></script>
+    <script  src="./css/scripts/viewscript.js"></script>
+  </body>
+  </html>

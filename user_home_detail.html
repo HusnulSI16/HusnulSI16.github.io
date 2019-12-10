@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>user Pembelian</title>
+	<link rel="stylesheet" type="text/css" href="css/topnav.css">
+	<link rel="stylesheet" type="text/css" href="css/tampilan.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css" media="all">
+</head>
+<body>
+
+	<div class="topnav" id="myTopnav">
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i></a>
+			<a href="index.html"">Keluar</a>
+			<a href="user_profil.html">Profil</a>
+			<a href="user_pesan.html">Pesan</a>
+			<a href="user_pembelian.html">Pesanan Saya</a>
+			<a href="user_keranjang.html">Keranjang</a>
+			<a href="user_home.html">Beranda</a>
+		</div>
+
+		<div class="main">
+			<div class="kotak">
+				<div class="kotak_putih">
+					<div style="text-align: center;">
+						<h2>Detail Produk</h2>
+					</div>
+					<table>
+						<img src="img/produk/1.jpg" style=" width: 200px; height: 180px;">
+						<tr>
+							<td><b>Nama</b></td>
+							<td>Kripik Singkong Original</td>
+						</tr>
+						<tr>
+							<td><b>Stok</b></td>
+							<td>3000 kg</td>
+						</tr>
+						<tr>
+							<td><b>Harga/kg</b></td>
+							<td>Rp. 15.000</td>
+						</tr>
+						<tr>
+							<td><b>Deskripsi</b></td>
+							<td>Produk dibuat dengan bahan-bahan alami, sangat renyah, aman dari pengawet dan pewarna makanan, produk dikemas dengan rapi dan dijamin rasanya gurih dan sangat recomended untuk di konsumsi untuk anak-anak usia di atas 3 tahun </td>
+						</tr>
+					</table>
+					<br>
+					<tr> 
+						<a href="user_keranjang.html"> <button class="tmbl tmbl_tambah" type="submit">Beli</button>
+						</a>
+					</tr>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			function myFunction() {
+				var x = document.getElementById("myTopnav");
+				if (x.className === "topnav") {
+					x.className += " responsive";
+				} else {
+					x.className = "topnav";
+				}
+			}
+		</script>
+	</body>
+	</html>

@@ -1,812 +1,323 @@
 <!DOCTYPE html>
 <head>
-  <title>User Beranda</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-  <link rel="stylesheet" type="text/css" href="css/css.css">
+  <title>user home</title>
   <link rel="stylesheet" type="text/css" href="css/topnav.css">
-<script type="text/javascript" src="css/scripts/jquery-1.3.2.js"></script>
-<script type="text/javascript" src="css/scripts/jquery.livequery.js"></script>
-
+  <link rel="stylesheet" type="text/css" href="css/tampilan.css">
+  <link rel="stylesheet" type="text/css" href="css/layout.css" media="all"
 </head>
-
 <body id="top">
-<div class="topnav" id="myTopnav">
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+  <div class="topnav" id="myTopnav">
   <a href="index.html"">Keluar</a>
   <a href="user_profil.html">Profil</a>
   <a href="user_pesan.html">Pesan</a>
   <a href="user_pembelian.html">Pesanan Saya</a>
   <a href="user_keranjang.html">Keranjang</a>
   <a href="user_home.html">Beranda</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i></a>
+  </div>
 </div>
 
+  <!-- ################################################################################################ -->
 
-<div align="left" style="min-height:800px;">  
-  <div id="cart_wrapper" align="center">
-    <form action="#" id="cart_form" name="cart_form">
-      <div class="cart-info"></div>
-      <div class="cart-total">
-        <b>Total Charges:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b> $<span>0</span>
-        
-        <input type="hidden" name="total-hidden-charges" id="total-hidden-charges" value="0" />
+  <div class="wrapper row3">
+    <div class="hoc container clear"> 
+      <!-- ################################################################################################ -->
+      <div class="sectiontitle">
+        <h6 class="heading">Produk Kripik Jago</h6>
       </div>
-      
-      <button type="submit" id="Submit">CheckOut</button>
-    
-    </form>
-  </div>
-  
-  <div id="wrap" align="center">
-    
-    <a id="show_cart" href="javascript:void(0)">View Cart</a>
-    
-    <ul>
-      <li id="1">
-        <img src="img/produk/1.jpg" class="items" height="100" alt="" />
-        
-        <br clear="all" />
-        <div>Red Grocery Bag</div>
-      </li>
-      
-      <li id="2">
-        <img src="img/produk/2.jpg" class="items" height="100" alt="" />
-        
-        <br clear="all" />
-        <div>Reusable Grocery Bag</div>
-      </li>
-      
-      <li id="3">
-        <img src="img/produk/3.jpg" class="items" height="100" alt="" />
-        
-        <br clear="all" />
-        <div>White Grocery Bag</div>
-      </li>
-      <li id="4">
-        <img src="img/produk/4.jpg" class="items" height="100" alt="" />
-        
-        <br clear="all" />
-        <div>Yellow Grocery Bag</div>
-      </li>
-      
-      <!-- Detail Boxes for above four li -->
-      
-      <div class="detail-view" id="detail-1">
-      
-        <div class="close" align="right">
-          <a href="javascript:void(0)">x</a>
-          
+      <div class="badan">
+        <div class="list-produk">
+          <img src="img/produk/1.jpg">
+          <div class="txtwrap">
+            <ul class="nospace meta">
+              <li><i class="fa fa-money"></i> <a>Rp 25.000/kg</a></li>
+              <li><i class="fa fa-tag"></i> <a>Kripik Talas Original</a></li>
+            </ul>
+          </div> 
+          <a class="tombol tombol-detail" href="user_home_detail.html">Detail</a>
+          <a class="tombol tombol-beli" href="user_keranjang.html">Beli</a>
         </div>
-        
-        <img src="img/produk/1.jpg" class="detail_images" width="340" height="310" alt="" />
-        
-        <div class="detail_info">
-          
-          <label class='item_name'>Kripik singkong asin</label>
-          <br clear="all" />
-          
-          <p>
-            ajhdashdajdaksdjlasdkals;dk;asl;dkf
-          
-            <br clear="all" /><br clear="all" />
-            $<span class="price">150.00</span>
-            
-          </p>
-          
-          <br clear="all" />
-          
-          <button  class="add-to-cart-button">Add to Cart</button>
-          
-        </div>
-        
-        
-      </div>
-      <div class="detail-view" id="detail-2">
-        
-        <div class="close" align="right">
-          <a href="javascript:void(0)">x</a>
-          
-        </div>
-        
-        <img src="img/produk/2.jpg" class="detail_images" width="340" height="310" alt="" />
-        
-        <div class="detail_info">
-          
-          <label class='item_name'>Kripik Singkong pedas</label>
-          <br clear="all" />
-          
-          <p>
-            shopping bag, shopping, bag, merchandise, consumerism, gift:
-          
-            <br clear="all" /><br clear="all" />
-            $<span class="price">70.00</span>
-            
-          </p>
-          
-          <br clear="all" />
-          
-          <button  class="add-to-cart-button">Add to Cart</button>
-          
-        </div>
-        
-      </div>
-      <div class="detail-view" id="detail-3">
-        
-        <div class="close" align="right">
-          <a href="javascript:void(0)">x</a>
-          
-        </div>
-        
-        <img src="img/produk/3.jpg" class="detail_images" width="340" height="310" alt="" />
-        
-        <div class="detail_info">
-          
-          <label class='item_name'>White Grocery Bag</label>
-          <br clear="all" />
-          
 
-          <p>
-            shopping bag, shopping, bag, merchandise, consumerism, gift:
-          
-            <br clear="all" /><br clear="all" />
-            $<span class="price">50.00</span>
-            
-          </p>
-          
-          <br clear="all" />
-          
-          <button  class="add-to-cart-button">Add to Cart</button>
-          
+        <div class="list-produk">
+          <img src="img/produk/2.jpg">
+          <div class="txtwrap">
+            <ul class="nospace meta">
+              <li><i class="fa fa-money"></i> <a>Rp 25.000/kg</a></li>
+              <li><i class="fa fa-tag"></i> <a>Kripik Talas Original</a></li>
+            </ul>
+          </div> 
+          <a class="tombol tombol-detail" href="user_home_detail.html">Detail</a>
+          <a class="tombol tombol-beli" href="user_keranjang.html">Beli</a>
         </div>
-        
-      </div>
-      <div class="detail-view" id="detail-4">
-        
-        <div class="close" align="right">
-          <a href="javascript:void(0)">x</a>
-          
-        </div>
-        
-        <img src="img/produk/4.jpg" class="detail_images" width="340" height="310" alt="" />
-        
-        <div class="detail_info">
-          
-          <label class='item_name'>Yellow Grocery Bag</label>
-          <br clear="all" />
-          
-          <p>
-            shopping bag, shopping, bag, merchandise, consumerism, gift:
-          
-            <br clear="all" /><br clear="all" />
-            $<span class="price">90.00</span>
-            
-          </p>
-          
-          <br clear="all" />
-          
-          <button  class="add-to-cart-button">Add to Cart</button>
-          
-        </div>
-        
-      </div>
-      
-      <!---->
-      
-      <li id="5">
-        <img src="img/produk/5.jpg" class="items" height="100" alt="" />
-        
-        <br clear="all" />
-        <div>Reusable Green Bag</div>
-      </li>
-      
-      <li id="6">
-        <img src="img/produk/6.jpg" class="items" height="100" alt="" />
-        
-        <br clear="all" />
-        <div>Simple  Bag</div>
-      </li>
-      
-      <li id="7">
-        <img src="img/produk/7.jpg" class="items" height="100" alt="" />
-        
-        <br clear="all" />
-        <div>WhiteGrocery Bag</div>
-      </li>
-      <li id="8">
-        <img src="img/produk/8.jpg" class="items" height="100" alt="" />
-        
-        <br clear="all" />
-        <div>Reusable Grocery Bag</div>
-      </li>
-      
-      <!-- Detail Boxes for above four li -->
-      
-      <div class="detail-view" id="detail-5">
-        
-        <div class="close" align="right">
-          <a href="javascript:void(0)">x</a>
-          
-        </div>
-        
-        <img src="img/produk/5.jpg" class="detail_images" width="340" height="310" alt="" />
-        
-        <div class="detail_info">
-          
-          <label class='item_name'>Reusable Grocery Bag</label>
-          <br clear="all" />
-          
-          <p>
-            shopping bag, shopping, bag, merchandise, consumerism, gift:
-          
-            <br clear="all" /><br clear="all" />
-            $<span class="price">80.00</span>
-            
-          </p>
-          
-          <br clear="all" />
-          
-          <button  class="add-to-cart-button">Add to Cart</button>
-          
-        </div>
-        
-      </div>
-      <div class="detail-view" id="detail-6">
-        
-        <div class="close" align="right">
-          <a href="javascript:void(0)">x</a>
-          
-        </div>
-        
-        <img src="img/produk/6.jpg" class="detail_images" width="340" height="310" alt="" />
-        
-        <div class="detail_info">
-          
-          <label class='item_name'>Reusable Grocery Bag</label>
-          <br clear="all" />
-          
-          <p>
-            shopping bag, shopping, bag, merchandise, consumerism, gift:
-          
-            <br clear="all" /><br clear="all" />
-            $<span class="price">80.00</span>
-            
-          </p>
-          
-          <br clear="all" />
-          
-          <button  class="add-to-cart-button">Add to Cart</button>
-          
-        </div>
-        
-      </div>
-      <div class="detail-view" id="detail-7">
-        
-        <div class="close" align="right">
-          <a href="javascript:void(0)">x</a>
-          
-        </div>
-        
-        <img src="img/produk/7.jpg" class="detail_images" width="340" height="310" alt="" />
-        
-        <div class="detail_info">
-          
-          <label class='item_name'>WhiteGrocery Bag</label>
-          <br clear="all" />
-          
-          <p>
-            shopping bag, shopping, bag, merchandise, consumerism, gift:
-          
-            <br clear="all" /><br clear="all" />
-            $<span class="price">80.00</span>
-            
-          </p>
-          
-          <br clear="all" />
-          
-          <button  class="add-to-cart-button">Add to Cart</button>
-          
-        </div>
-        
-      </div>
-      <div class="detail-view" id="detail-8">
-        
-        <div class="close" align="right">
-          <a href="javascript:void(0)">x</a>
-          
-        </div>
-        
-        <img src="img/produk/8.jpg" class="detail_images" width="340" height="310" alt="" />
-        
-        <div class="detail_info">
-          
-          <label class='item_name'>Reusable Grocery Bag</label>
-          <br clear="all" />
-          
-          <p>
-            shopping bag, shopping, bag, merchandise, consumerism, gift:
-          
-            <br clear="all" /><br clear="all" />
-            $<span class="price">80.00</span>
-            
-          </p>
-          
-          <br clear="all" />
-          
-          <button  class="add-to-cart-button">Add to Cart</button>
-          
-        </div>
-        
-      </div>
-      
-      <!---->
-      <li id="1">
-        <img src="img/produk/1.jpg" class="items" height="100" alt="" />
-        
-        <br clear="all" />
-        <div>Red Grocery Bag</div>
-      </li>
-      
-      <li id="2">
-        <img src="img/produk/2.jpg" class="items" height="100" alt="" />
-        
-        <br clear="all" />
-        <div>Reusable Grocery Bag</div>
-      </li>
-      
-      <li id="3">
-        <img src="img/produk/3.jpg" class="items" height="100" alt="" />
-        
-        <br clear="all" />
-        <div>White Grocery Bag</div>
-      </li>
-      <li id="4">
-        <img src="img/produk/4.jpg" class="items" height="100" alt="" />
-        
-        <br clear="all" />
-        <div>Yellow Grocery Bag</div>
-      </li>
-      
-      <!-- Detail Boxes for above four li -->
-      
-      <div class="detail-view" id="detail-9">
-      
-        <div class="close" align="right">
-          <a href="javascript:void(0)">x</a>
-          
-        </div>
-        
-        <img src="img/produk/1.jpg" class="detail_images" width="340" height="310" alt="" />
-        
-        <div class="detail_info">
-          
-          <label class='item_name'>Kripik singkong asin</label>
-          <br clear="all" />
-          
-          <p>
-            ajhdashdajdaksdjlasdkals;dk;asl;dkf
-          
-            <br clear="all" /><br clear="all" />
-            $<span class="price">120.00</span>
-            
-          </p>
-          
-          <br clear="all" />
-          
-          <button  class="add-to-cart-button">Add to Cart</button>
-          
-        </div>
-        
-        
-      </div>
-      <div class="detail-view" id="detail-10">
-        
-        <div class="close" align="right">
-          <a href="javascript:void(0)">x</a>
-          
-        </div>
-        
-        <img src="img/produk/2.jpg" class="detail_images" width="340" height="310" alt="" />
-        
-        <div class="detail_info">
-          
-          <label class='item_name'>Kripik Singkong pedas</label>
-          <br clear="all" />
-          
-          <p>
-            shopping bag, shopping, bag, merchandise, consumerism, gift:
-          
-            <br clear="all" /><br clear="all" />
-            $<span class="price">70.00</span>
-            
-          </p>
-          
-          <br clear="all" />
-          
-          <button  class="add-to-cart-button">Add to Cart</button>
-          
-        </div>
-        
-      </div>
-      <div class="detail-view" id="detail-11">
-        
-        <div class="close" align="right">
-          <a href="javascript:void(0)">x</a>
-          
-        </div>
-        
-        <img src="img/produk/3.jpg" class="detail_images" width="340" height="310" alt="" />
-        
-        <div class="detail_info">
-          
-          <label class='item_name'>White Grocery Bag</label>
-          <br clear="all" />
-          
 
-          <p>
-            shopping bag, shopping, bag, merchandise, consumerism, gift:
-          
-            <br clear="all" /><br clear="all" />
-            $<span class="price">50.00</span>
-            
-          </p>
-          
-          <br clear="all" />
-          
-          <button  class="add-to-cart-button">Add to Cart</button>
-          
+        <div class="list-produk">
+          <img src="img/produk/2.jpg" alt="Jaket Tactical">
+          <div class="txtwrap">
+            <ul class="nospace meta">
+              <li><i class="fa fa-money"></i> <a>Rp 25.000/kg</a></li>
+              <li><i class="fa fa-tag"></i> <a>Kripik Talas Original</a></li>
+            </ul>
+          </div> 
+          <a class="tombol tombol-detail" href="user_home_detail.html">Detail</a>
+          <a class="tombol tombol-beli" href="user_keranjang.html">Beli</a>
         </div>
-        
+
+        <div class="list-produk">
+          <img src="img/produk/3.jpg" alt="Jaket Bomber Stylish">
+          <div class="txtwrap">
+            <ul class="nospace meta">
+              <li><i class="fa fa-money"></i> <a>Rp 25.000/kg</a></li>
+              <li><i class="fa fa-tag"></i> <a>Kripik Talas Original</a></li>
+            </ul>
+          </div> 
+          <a class="tombol tombol-detail" href="user_home_detail.html">Detail</a> 
+          <a class="tombol tombol-beli" href="user_keranjang.html">Beli</a>
+        </div>
+
+        <div class="list-produk">
+          <img src="img/produk/4.jpg" alt="Jaket Naruto">
+          <div class="txtwrap">
+            <ul class="nospace meta">
+              <li><i class="fa fa-money"></i> <a>Rp 25.000/kg</a></li>
+              <li><i class="fa fa-tag"></i> <a>Kripik Talas Original</a></li>
+            </ul>
+          </div> 
+          <a class="tombol tombol-detail" href="user_home_detail.html">Detail</a>
+          <a class="tombol tombol-beli" href="user_keranjang.html">Beli</a>
+        </div>
       </div>
-      <div class="detail-view" id="detail-12">
-        
-        <div class="close" align="right">
-          <a href="javascript:void(0)">x</a>
-          
+
+      <div class="badan">
+        <div class="list-produk">
+          <img src="img/produk/8.jpg" alt="Jaket Parasut">
+          <div class="txtwrap">
+            <ul class="nospace meta">
+              <li><i class="fa fa-money"></i> <a>Rp 25.000/kg</a></li>
+              <li><i class="fa fa-tag"></i> <a>Kripik Talas Original</a></li>
+            </ul>
+          </div> 
+          <a class="tombol tombol-detail" href="user_home_detail.html">Detail</a>
+          <a class="tombol tombol-beli" href="user_keranjang.html">Beli</a>
         </div>
-        
-        <img src="img/produk/4.jpg" class="detail_images" width="340" height="310" alt="" />
-        
-        <div class="detail_info">
-          
-          <label class='item_name'>Yellow Grocery Bag</label>
-          <br clear="all" />
-          
-          <p>
-            shopping bag, shopping, bag, merchandise, consumerism, gift:
-          
-            <br clear="all" /><br clear="all" />
-            $<span class="price">90.00</span>
-            
-          </p>
-          
-          <br clear="all" />
-          
-          <button  class="add-to-cart-button">Add to Cart</button>
-          
+
+        <div class="list-produk">
+          <img src="img/produk/5.jpg" alt="Jaket Tactical">
+          <div class="txtwrap">
+            <ul class="nospace meta">
+              <li><i class="fa fa-money"></i> <a>Rp 25.000/kg</a></li>
+              <li><i class="fa fa-tag"></i> <a>Kripik Talas Original</a></li>
+            </ul>
+          </div> 
+
+          <a class="tombol tombol-detail" href="user_home_detail.html">Detail</a>
+          <a class="tombol tombol-beli" href="user_keranjang.html">Beli</a>
         </div>
-        
+
+        <div class="list-produk">
+          <img src="img/produk/6.jpg" alt="Jaket Bomber Stylish">
+          <div class="txtwrap">
+            <ul class="nospace meta">
+              <li><i class="fa fa-money"></i> <a>Rp 25.000/kg</a></li>
+              <li><i class="fa fa-tag"></i> <a>Kripik Talas Original</a></li>
+            </ul>
+          </div>  
+          <a class="tombol tombol-detail" href="user_home_detail.html">Detail</a> 
+          <a class="tombol tombol-beli" href="user_keranjang.html">Beli</a>
+        </div>
+
+        <div class="list-produk">
+          <img src="img/produk/7.jpg" alt="Jaket Naruto">
+          <div class="txtwrap">
+            <ul class="nospace meta">
+              <li><i class="fa fa-money"></i> <a>Rp 25.000/kg</a></li>
+              <li><i class="fa fa-tag"></i> <a>Kripik Talas Original</a></li>
+            </ul>
+          </div> 
+          <a class="tombol tombol-detail" href="user_home_detail.html">Detail</a>
+          <a class="tombol tombol-beli" href="user_keranjang.html">Beli</a>
+        </div>
+
+        <div class="list-produk">
+          <img src="img/produk/7.jpg" alt="Jaket Naruto">
+          <div class="txtwrap">
+            <ul class="nospace meta">
+              <li><i class="fa fa-money"></i> <a>Rp 25.000/kg</a></li>
+              <li><i class="fa fa-tag"></i> <a>Kripik Talas Original</a></li>
+            </ul>
+          </div> 
+          <a class="tombol tombol-detail" href="user_home_detail.html">Detail</a>
+          <a class="tombol tombol-beli" href="user_keranjang.html">Beli</a>
+        </div>
+
       </div>
-      
-      <!---->
-      
-      <li id="5">
-        <img src="img/produk/5.jpg" class="items" height="100" alt="" />
-        
-        <br clear="all" />
-        <div>Reusable Green Bag</div>
-      </li>
-      
-      <li id="6">
-        <img src="img/produk/6.jpg" class="items" height="100" alt="" />
-        
-        <br clear="all" />
-        <div>Simple  Bag</div>
-      </li>
-      
-      <li id="7">
-        <img src="img/produk/7.jpg" class="items" height="100" alt="" />
-        
-        <br clear="all" />
-        <div>WhiteGrocery Bag</div>
-      </li>
-      <li id="8">
-        <img src="img/produk/8.jpg" class="items" height="100" alt="" />
-        
-        <br clear="all" />
-        <div>Reusable Grocery Bag</div>
-      </li>
-      
-      <!-- Detail Boxes for above four li -->
-      
-      <div class="detail-view" id="detail-13">
-        
-        <div class="close" align="right">
-          <a href="javascript:void(0)">x</a>
-          
+
+      <div class="badan">
+        <div class="list-produk">
+          <img src="img/produk/9.jpg" alt="Jaket Parasut">
+          <div class="txtwrap">
+            <ul class="nospace meta">
+              <li><i class="fa fa-money"></i> <a>Rp 25.000/kg</a></li>
+              <li><i class="fa fa-tag"></i> <a>Kripik Talas Original</a></li>
+            </ul>
+          </div> 
+          <a class="tombol tombol-detail" href="user_home_detail.html">Detail</a>
+          <a class="tombol tombol-beli" href="user_keranjang.html">Beli</a>
         </div>
-        
-        <img src="img/produk/5.jpg" class="detail_images" width="340" height="310" alt="" />
-        
-        <div class="detail_info">
-          
-          <label class='item_name'>Reusable Grocery Bag</label>
-          <br clear="all" />
-          
-          <p>
-            shopping bag, shopping, bag, merchandise, consumerism, gift:
-          
-            <br clear="all" /><br clear="all" />
-            $<span class="price">80.00</span>
-            
-          </p>
-          
-          <br clear="all" />
-          
-          <button  class="add-to-cart-button">Add to Cart</button>
-          
+
+        <div class="list-produk">
+          <img src="img/produk/4.jpg" alt="Jaket Tactical">
+          <div class="txtwrap">
+            <ul class="nospace meta">
+              <li><i class="fa fa-money"></i> <a>Rp 25.000/kg</a></li>
+              <li><i class="fa fa-tag"></i> <a>Kripik Talas Original</a></li>
+            </ul>
+          </div> 
+          <a class="tombol tombol-detail" href="user_home_detail.html">Detail</a>
+          <a class="tombol tombol-beli" href="user_keranjang.html">Beli</a>
         </div>
-        
+
+        <div class="list-produk">
+          <img src="img/produk/3.jpg" alt="Jaket Bomber Stylish">
+          <div class="txtwrap">
+            <ul class="nospace meta">
+              <li><i class="fa fa-money"></i> <a>Rp 25.000/kg</a></li>
+              <li><i class="fa fa-tag"></i> <a>Kripik Talas Original</a></li>
+            </ul>
+          </div>  
+          <a class="tombol tombol-detail" href="user_home_detail.html">Detail</a> 
+          <a class="tombol tombol-beli" href="user_keranjang.html">Beli</a>
+        </div>
+
+        <div class="list-produk">
+          <img src="img/produk/1.jpg" alt="Jaket Naruto">
+          <div class="txtwrap">
+            <ul class="nospace meta">
+              <li><i class="fa fa-money"></i> <a>Rp 25.000/kg</a></li>
+              <li><i class="fa fa-tag"></i> <a>Kripik Talas Original</a></li>
+            </ul>
+          </div> 
+          <a class="tombol tombol-detail" href="user_home_detail.html">Detail</a>
+          <a class="tombol tombol-beli" href="user_keranjang.html">Beli</a>
+        </div>
+
+        <div class="list-produk">
+          <img src="img/produk/1.jpg" alt="Jaket Naruto">
+          <div class="txtwrap">
+            <ul class="nospace meta">
+              <li><i class="fa fa-money"></i> <a>Rp 25.000/kg</a></li>
+              <li><i class="fa fa-tag"></i> <a>Kripik Talas Original</a></li>
+            </ul>
+          </div> 
+          <a class="tombol tombol-detail" href="user_home_detail.html">Detail</a>
+          <a class="tombol tombol-beli" href="user_keranjang.html">Beli</a>
+        </div>
+
       </div>
-      <div class="detail-view" id="detail-16">
-        
-        <div class="close" align="right">
-          <a href="javascript:void(0)">x</a>
-          
-        </div>
-        
-        <img src="img/produk/6.jpg" class="detail_images" width="340" height="310" alt="" />
-        
-        <div class="detail_info">
-          
-          <label class='item_name'>Reusable Grocery Bag</label>
-          <br clear="all" />
-          
-          <p>
-            shopping bag, shopping, bag, merchandise, consumerism, gift:
-          
-            <br clear="all" /><br clear="all" />
-            $<span class="price">80.00</span>
-            
-          </p>
-          
-          <br clear="all" />
-          
-          <button  class="add-to-cart-button">Add to Cart</button>
-          
-        </div>
-        
+
+      <!-- ################################################################################################ -->
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a class="active" href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">&raquo;</a>
       </div>
-      <div class="detail-view" id="detail-17">
-        
-        <div class="close" align="right">
-          <a href="javascript:void(0)">x</a>
-          
-        </div>
-        
-        <img src="img/produk/7.jpg" class="detail_images" width="340" height="310" alt="" />
-        
-        <div class="detail_info">
-          
-          <label class='item_name'>WhiteGrocery Bag</label>
-          <br clear="all" />
-          
-          <p>
-            shopping bag, shopping, bag, merchandise, consumerism, gift:
-          
-            <br clear="all" /><br clear="all" />
-            $<span class="price">80.00</span>
-            
-          </p>
-          
-          <br clear="all" />
-          
-          <button  class="add-to-cart-button">Add to Cart</button>
-          
-        </div>
-        
-      </div>
-      <div class="detail-view" id="detail-18">
-        
-        <div class="close" align="right">
-          <a href="javascript:void(0)">x</a>
-          
-        </div>
-        
-        <img src="img/produk/8.jpg" class="detail_images" width="340" height="310" alt="" />
-        
-        <div class="detail_info">
-          
-          <label class='item_name'>Reusable Grocery Bag</label>
-          <br clear="all" />
-          
-          <p>
-            shopping bag, shopping, bag, merchandise, consumerism, gift:
-          
-            <br clear="all" /><br clear="all" />
-            $<span class="price">80.00</span>
-            
-          </p>
-          
-          <br clear="all" />
-          
-          <button  class="add-to-cart-button">Add to Cart</button>
-          
-        </div>
-        
-      </div>
-    </ul>
-    <br clear="all" />
-  </div>
-
-
-  <script type="text/javascript">
-
-$(document).ready(function() {
-  
-  var Arrays=new Array();
-  
-  $('.add-to-cart-button').click(function(){
-    
-    var thisID    = $(this).parent().parent().attr('id').replace('detail-','');
-    
-    var itemname  = $(this).parent().find('.item_name').html();
-    var itemprice = $(this).parent().find('.price').html();
-    
-    if(include(Arrays,thisID))
-    {
-      var price    = $('#each-'+thisID).children(".shopp-price").find('em').html();
-      var quantity = $('#each-'+thisID).children(".shopp-quantity").html();
-      quantity = parseInt(quantity)+parseInt(1);
-      
-      var total = parseInt(itemprice)*parseInt(quantity);
-      
-      $('#each-'+thisID).children(".shopp-price").find('em').html(total);
-      $('#each-'+thisID).children(".shopp-quantity").html(quantity);
-      
-      var prev_charges = $('.cart-total span').html();
-      prev_charges = parseInt(prev_charges)-parseInt(price);
-      
-      prev_charges = parseInt(prev_charges)+parseInt(total);
-      $('.cart-total span').html(prev_charges);
-      
-      $('#total-hidden-charges').val(prev_charges);
-    }
-    else
-    {
-      Arrays.push(thisID);
-      
-      var prev_charges = $('.cart-total span').html();
-      prev_charges = parseInt(prev_charges)+parseInt(itemprice);
-      
-      $('.cart-total span').html(prev_charges);
-      $('#total-hidden-charges').val(prev_charges);
-      
-      var Height = $('#cart_wrapper').height();
-      $('#cart_wrapper').css({height:Height+parseInt(45)});
-      
-      $('#cart_wrapper .cart-info').append('<div class="shopp" id="each-'+thisID+'"><div class="label">'+itemname+'</div><div class="shopp-price"> $<em>'+itemprice+'</em></div><span class="shopp-quantity">1</span><img src="remove.png" class="remove" /><br class="all" /></div>');
-      
-    }
-    
-  }); 
-  
-  $('.remove').livequery('click', function() {
-    
-    var deduct = $(this).parent().children(".shopp-price").find('em').html();
-    var prev_charges = $('.cart-total span').html();
-    
-    var thisID = $(this).parent().attr('id').replace('each-','');
-    
-    var pos = getpos(Arrays,thisID);
-    Arrays.splice(pos,1,"0")
-    
-    prev_charges = parseInt(prev_charges)-parseInt(deduct);
-    $('.cart-total span').html(prev_charges);
-    $('#total-hidden-charges').val(prev_charges);
-    $(this).parent().remove();
-    
-  }); 
-  
-  $('#Submit').livequery('click', function() {
-    
-    var totalCharge = $('#total-hidden-charges').val();
-    
-    $('#cart_wrapper').html('Total Charges: $'+totalCharge);
-    
-    return false;
-    
-  }); 
-  
-  // this is for 2nd row's li offset from top. It means how much offset you want to give them with animation
-  var single_li_offset  = 200;
-  var current_opened_box  = -1;
-  
-  $('#wrap li').click(function() {
-  
-    var thisID = $(this).attr('id');
-    var $this  = $(this);
-    
-    var id = $('#wrap li').index($this);
-    
-    if(current_opened_box == id) // if user click a opened box li again you close the box and return back
-    {
-      $('#wrap .detail-view').slideUp('slow');
-      return false;
-    }
-    $('#cart_wrapper').slideUp('slow');
-    $('#wrap .detail-view').slideUp('slow');
-    
-    // save this id. so if user click a opened box li again you close the box.
-    current_opened_box = id;
-    
-    var targetOffset = 0;
-    
-    // below conditions assumes that there are four li in one row and total rows are 4. How ever if you want to increase the rows you have to increase else-if conditions and if you want to increase li in one row, then you have to increment all value below. (if(id<=3)), if(id<=7) etc
-    
-    if(id<=3)
-      targetOffset = 0;
-    else if(id<=7)
-      targetOffset = single_li_offset;
-    else if(id<=11)
-      targetOffset = single_li_offset*2;
-    else if(id<=15)
-      targetOffset = single_li_offset*3;
-    
-    $("html:not(:animated),body:not(:animated)").animate({scrollTop: targetOffset}, 800,function(){
-      
-      $('#wrap #detail-'+thisID).slideDown(500);
-      return false;
-    });
-    
-  });
-  
-  $('.close a').click(function() {
-    
-    $('#wrap .detail-view').slideUp('slow');
-    
-  });
-  
-  $('.closeCart').click(function() {
-    
-    $('#cart_wrapper').slideUp();
-    
-  });
-  
-  $('#show_cart').click(function() {
-    
-    $('#cart_wrapper').slideToggle('slow');
-    
-  });
-  
-});
-
-function include(arr, obj) {
-  for(var i=0; i<arr.length; i++) {
-    if (arr[i] == obj) return true;
-  }
-}
-
-function getpos(arr, obj) {
-  for(var i=0; i<arr.length; i++) {
-    if (arr[i] == obj) return i;
-  }
-}
-
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-
-</script>
-  
+    </div>
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
 </div>
+
+<!-- ################################################################################################ -->
+
+<div class="wrapper row4">
+  <footer id="footer" class="hoc clear"> 
+    <div class="one_third first">
+      <h6 class="heading">Luctus turpis interdum</h6>
+      <ul class="nospace btmspace-30 linklist contact">
+        <li><i class="fa fa-map-marker"></i>
+          <address>
+            Jl.Kalimatan 34 Kampus Universitas Jember, 68125
+          </address>
+        </li>
+        <li><i class="fa fa-phone"></i> +62 (0331) 4858675</li>
+        <li><i class="fa fa-envelope-o"></i> unej.ac.id@gmail.com</li>
+      </ul>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="faicon-twitter" href="www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="faicon-dribble" href="www.google.com"><i class="fa fa-dribbble"></i></a></li>
+        <li><a class="faicon-linkedin" href="www.linked.com"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="faicon-google-plus" href="www.googleplus.com"><i class="fa fa-google-plus"></i></a></li>
+        <li><a class="faicon-vk" href="www.vk.com"><i class="fa fa-vk"></i></a></li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="heading">Facilisis morbi interdum</h6>
+      <ul class="nospace linklist">
+        <li>
+          <article>
+            <h2 class="nospace font-x1"><a href="#">volutpat maximus vel</a></h2>
+            <time class="font-xs block btmspace-10" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
+            <p class="nospace">Primis in faucibus nam dictum malesuada dictum maecenas in magna arcu [&hellip;]</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h2 class="nospace font-x1"><a href="#">et malesuada fames ante</a></h2>
+            <time class="font-xs block btmspace-10" datetime="2045-04-05">Thursday, 5<sup>th</sup> April 2045</time>
+            <p class="nospace">Nullam tortor ligula lobortis pharetra leo vel malesuada auctor odio nunc [&hellip;]</p>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="heading">Justo condimentum tortor</h6>
+      <p class="nospace btmspace-30">Non condimentum lectus proin consequat eleifend elementum quisque nulla.</p>
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Newsletter:</legend>
+          <input class="btmspace-15" type="text" value="" placeholder="Name">
+          <input class="btmspace-15" type="text" value="" placeholder="Email">
+          <button type="submit" value="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+  </footer>
+</div>
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <p class="fl_left">Copyright &copy; 2019 - Kelompok 4 - <a href="#">Kelas C</a></p>
+  </div>
+</div>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  function openFormdaftar() {
+    document.getElementById("myFormdaftar").style.display = "block";
+  }
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+  function closeForm2() {
+    document.getElementById("myFormdaftar").style.display = "none";
+  }
+</script><script src="css/scripts/jquery.mobilemenu.js"></script>
+
 <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
 <!-- JAVASCRIPTS -->
-<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="css/scripts/jquery.min.js"></script>
+<script src="css/scripts/jquery.backtotop.js"></script>
 </body>
 </html>

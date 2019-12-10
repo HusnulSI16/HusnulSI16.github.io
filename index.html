@@ -2,182 +2,181 @@
 <html>
 <head>
 	<title>Si-Jago</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/pop_up.css">
-	<link rel="stylesheet" type="text/css" href="css/carousel.css">
-<link rel="stylesheet" type="text/css" href="css/topnav.css">
-<link href="css/layout.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/pop_up.css">
+  <link rel="stylesheet" type="text/css" href="css/carousel.css">
+  <link rel="stylesheet" type="text/css" href="css/topnav.css">
+  <link href="css/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
-<!--Header-->
-<div class="topnav" id="myTopnav">
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-  <a onclick="openForm()" >Masuk</a>
-  <a href="home_ulasan.html">Ulasan</a>
-  <a href="home_tentang.html">Tentang</a>
-  <a href="home_galeri.html">Produk</a>
-  <a href="index.html">Beranda</a>
-</div>
+  <!--Header-->
+  <div class="topnav" id="myTopnav">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i></a>
+      <a onclick="openForm()" >Masuk</a>
+      <a href="home_ulasan.html">Ulasan</a>
+      <a href="home_tentang.html">Tentang</a>
+      <a href="home_galeri.html">Produk</a>
+      <a href="index.html">Beranda</a>
+    </div>
 
+    <!--pop_up-->
+    <div class="form-popup" id="myForm">
+      <form action="user_home.html" class="form-container" method="post">
+        <h2>Masuk</h2>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+        <label for="psw"><b>Kata Sandi</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <a href="#x">Lupa Kata Sandi?</a>
+        <p>Belum Memiliki Akun? <a onclick="openFormdaftar()">Daftar</a></p>
+        <button type="submit" class="btn">Masuk</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Tutup</button>
+      </form>
+    </div>
 
- <!--pop_up-->
-<div class="form-popup" id="myForm">
-  <form action="user_home.html" class="form-container">
-    <h2>Masuk</h2>
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-    <label for="psw"><b>Kata Sandi</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-    <a href="#x">Lupa Kata Sandi?</a>
-    <p>Belum Memiliki Akun? <a onclick="openFormdaftar()">Daftar</a></p>
-    <button type="submit" class="btn">Masuk</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Tutup</button>
-  </form>
-</div>
+    <div class="form-popup" id="myFormdaftar">
+      <form action="user_home.html" class="form-container">
+        <h2>Daftar</h2>
 
-<div class="form-popup" id="myFormdaftar">
-  <form action="user_home.html" class="form-container">
-    <h2>Daftar</h2>
+        <label for="nama"><b>Nama</b></label>
+        <input type="text" placeholder="Enter Nama" name="nama" required method="post">
+        <label for="nomor"><b>Nomor Telepon</b></label>
+        <input type="number" placeholder="Enter Nomor Telepon" name="nomor" required>
+        <label for="alamat"><b>Alamat</b></label>
+        <input type="text" placeholder="Enter Alamat" name="alamat" required>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+        <label for="psw"><b>Kata Sandi</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <button type="submit" class="btn">Daftar</button>
+        <button type="button" class="btn cancel" onclick="closeForm2()">Kembali</button>
+      </form>
+    </div>
 
-    <label for="nama"><b>Nama</b></label>
-    <input type="text" placeholder="Enter Nama" name="nama" required>
-    <label for="nomor"><b>Nomor Telepon</b></label>
-    <input type="text" placeholder="Enter Nomor Telepon" name="nomor" required>
-    <label for="alamat"><b>Alamat</b></label>
-    <input type="text" placeholder="Enter Alamat" name="alamat" required>
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-    <label for="psw"><b>Kata Sandi</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-    <button type="submit" class="btn">Daftar</button>
-    <button type="button" class="btn cancel" onclick="closeForm2()">Kembali</button>
-  </form>
-</div>
-
-<!--Middle-->
- <div class="konten">
+    <!--Middle-->
+    <div class="konten">
       <div id="box_sd">
         <h1>Selamat datang di situs web kami<br>Sistem Informasi Penjualan Keripik Jago</h1>
         <a href="#kedua">Lihat Penjelasan</a>
       </div>
     </div>
 
-<!--carousel-->
-<div class=malasngoding-slider>
-    <div class=isi-slider>
-        <img src="img/Gambar1.JPG" alt="Gambar 1">
-        <img src="img/Gambar2.JPG" alt="Gambar 2">
-        <img src="img/Gambar3.JPG" alt="Gambar 3">
+    <!--carousel-->
+    <div class=malasngoding-slider>
+      <div class=isi-slider>
+        <img src="img/Gambar1.png" alt="Gambar 1">
+        <img src="img/Gambar2.png" alt="Gambar 2">
+        <img src="img/Gambar3.png" alt="Gambar 3">
       </div>
     </div>
- 
- <div class="sale-statistic-area">
-    <div class="" style="position: relative;">
-    <div class="col-xs-12" style="text-align: center;">
-        <div id="kedua">
-        <h4>Si-Jago</h4>
-        <div class="box_sd" style="text-align: center; margin-left: 70px; margin-bottom: 20px; margin-right: 70px;">
-          <p>Saat ini berbagai macam merek keripik pedas bisa kita temukan di pasaran. Sebut saja keripik pedas Maicih, Kripik Setan, Keripik Jenglots, Kripik Goal, Keripik Mang Lada, dan masih banyak lagi merek keripik pedas lainnya yang bisa kita temukan di berbagai pelosok daerah. Rata-rata para produsen keripik pedas tersebut menawarkan tingkatan level pedas dari mulai level satu hingga level sepuluh, atau ada juga yang menawarkan level Dewa dan setengah Dewa untuk membedakan tingkat pedas yang ditawarkannya kepada para konsumen.Nah, bagi Anda yang tertarik mengangkat keripik singkong pedas sebagai peluang usaha. Berikut ini kami informasikan beberapa hal yang perlu Anda siapkan, sebelum memulai usaha tersebut.
-          <p> 1. Pertama-tama ketahui jenis singkong yang berkualitas bagus. Lebih baik Anda bekerjasama langsung dengan petani singkong yang ada di kota Anda, untuk mendapatkan harga beli yang lebih miring dan kualitasnya benar-benar terjamin.
-          <p> 2. Persiapkan peralatan dan perlengkapan yang dibutuhkan untuk memproduksi keripik singkong pedas. Misalnya saja seperti mesin pengiris singkong (slicer), mesin pengemas (sealer), alat penggorengan, plastik kemasan, dll.
-          <p> 3. Tingkatkan pengetahuan dan keterampilan Anda dalam mengolah keripik singkong. Pastikan keripik singkong yang Anda hasilkan memiliki tekstur yang renyah dan cita rasa pedasnya memberikan sensasi berbeda bagi lidah para konsumen.Usaha ini merupakan usaha penjualan keripik yang ada jember. sistem ini merupakan sistme jasa pengantar pembelian ikan kepada konsumen. Dan sistem ini digunakan untuk meningkatkan penjualan ikan dengan mudah dan meningkatkan kesejahteraan para pengguna. Juga berdampak pada peningkatan penjualan dan efisiensi waktu dalam pemesanan keripik. Memudahkan pelanggan dalam melihat jumlah stok ikan yang ada. Sehingga menghindari kemungkinan kelebihan pesanan yang dapat mengurangi kadar kepercayaan pelanggan terhadap Penjual.</p>
-        </div>
-    </div>
-</div>
- </div>
-<!-- ################################################################################################ -->
+    
+    <div class="sale-statistic-area">
+      <div class="" style="position: relative;">
+        <div class="col-xs-12" style="text-align: center;">
+          <div id="kedua">
+            <h4>Si-Jago</h4>
+            <div class="box_sd" style="text-align: center; margin-left: 70px; margin-bottom: 20px; margin-right: 70px;">
+              <p>Saat ini berbagai macam merek keripik pedas bisa kita temukan di pasaran. Sebut saja keripik pedas Maicih, Kripik Setan, Keripik Jenglots, Kripik Goal, Keripik Mang Lada, dan masih banyak lagi merek keripik pedas lainnya yang bisa kita temukan di berbagai pelosok daerah. Rata-rata para produsen keripik pedas tersebut menawarkan tingkatan level pedas dari mulai level satu hingga level sepuluh, atau ada juga yang menawarkan level Dewa dan setengah Dewa untuk membedakan tingkat pedas yang ditawarkannya kepada para konsumen.Nah, bagi Anda yang tertarik mengangkat keripik singkong pedas sebagai peluang usaha. Berikut ini kami informasikan beberapa hal yang perlu Anda siapkan, sebelum memulai usaha tersebut.
+                <p> 1. Pertama-tama ketahui jenis singkong yang berkualitas bagus. Lebih baik Anda bekerjasama langsung dengan petani singkong yang ada di kota Anda, untuk mendapatkan harga beli yang lebih miring dan kualitasnya benar-benar terjamin.
+                  <p> 2. Persiapkan peralatan dan perlengkapan yang dibutuhkan untuk memproduksi keripik singkong pedas. Misalnya saja seperti mesin pengiris singkong (slicer), mesin pengemas (sealer), alat penggorengan, plastik kemasan, dll.
+                    <p> 3. Tingkatkan pengetahuan dan keterampilan Anda dalam mengolah keripik singkong. Pastikan keripik singkong yang Anda hasilkan memiliki tekstur yang renyah dan cita rasa pedasnya memberikan sensasi berbeda bagi lidah para konsumen.Usaha ini merupakan usaha penjualan keripik yang ada jember. sistem ini merupakan sistme jasa pengantar pembelian ikan kepada konsumen. Dan sistem ini digunakan untuk meningkatkan penjualan ikan dengan mudah dan meningkatkan kesejahteraan para pengguna. Juga berdampak pada peningkatan penjualan dan efisiensi waktu dalam pemesanan keripik. Memudahkan pelanggan dalam melihat jumlah stok ikan yang ada. Sehingga menghindari kemungkinan kelebihan pesanan yang dapat mengurangi kadar kepercayaan pelanggan terhadap Penjual.</p></p></p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ################################################################################################ -->
 
-<div class="wrapper row4">
-  <footer id="footer" class="hoc clear"> 
-    <div class="one_third first">
-      <h6 class="heading">Luctus turpis interdum</h6>
-      <ul class="nospace btmspace-30 linklist contact">
-        <li><i class="fa fa-map-marker"></i>
-          <address>
-          Jl.Kalimatan 34 Kampus Universitas Jember, 68125
-          </address>
-        </li>
-        <li><i class="fa fa-phone"></i> +62 (0331) 4858675</li>
-        <li><i class="fa fa-envelope-o"></i> unej.ac.id@gmail.com</li>
-      </ul>
-      <ul class="faico clear">
-        <li><a class="faicon-facebook" href="www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-        <li><a class="faicon-twitter" href="www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-        <li><a class="faicon-dribble" href="www.google.com"><i class="fa fa-dribbble"></i></a></li>
-        <li><a class="faicon-linkedin" href="www.linked.com"><i class="fa fa-linkedin"></i></a></li>
-        <li><a class="faicon-google-plus" href="www.googleplus.com"><i class="fa fa-google-plus"></i></a></li>
-        <li><a class="faicon-vk" href="www.vk.com"><i class="fa fa-vk"></i></a></li>
-      </ul>
-    </div>
-    <div class="one_third">
-      <h6 class="heading">Facilisis morbi interdum</h6>
-      <ul class="nospace linklist">
-        <li>
-          <article>
-            <h2 class="nospace font-x1"><a href="#">volutpat maximus vel</a></h2>
-            <time class="font-xs block btmspace-10" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
-            <p class="nospace">Primis in faucibus nam dictum malesuada dictum maecenas in magna arcu [&hellip;]</p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <h2 class="nospace font-x1"><a href="#">et malesuada fames ante</a></h2>
-            <time class="font-xs block btmspace-10" datetime="2045-04-05">Thursday, 5<sup>th</sup> April 2045</time>
-            <p class="nospace">Nullam tortor ligula lobortis pharetra leo vel malesuada auctor odio nunc [&hellip;]</p>
-          </article>
-        </li>
-      </ul>
-    </div>
-    <div class="one_third">
-      <h6 class="heading">Justo condimentum tortor</h6>
-      <p class="nospace btmspace-30">Non condimentum lectus proin consequat eleifend elementum quisque nulla.</p>
-      <form method="post" action="#">
-        <fieldset>
-          <legend>Newsletter:</legend>
-          <input class="btmspace-15" type="text" value="" placeholder="Name">
-          <input class="btmspace-15" type="text" value="" placeholder="Email">
-          <button type="submit" value="submit">Submit</button>
-        </fieldset>
-      </form>
-    </div>
-  </footer>
-</div>
-<div class="wrapper row5">
-  <div id="copyright" class="hoc clear"> 
-    <p class="fl_left">Copyright &copy; 2019 - Kelompok 4 - <a href="#">Kelas C</a></p>
-  </div> 
-</div>
+          <div class="wrapper row4">
+            <footer id="footer" class="hoc clear"> 
+              <div class="one_third first">
+                <h6 class="heading">Luctus turpis interdum</h6>
+                <ul class="nospace btmspace-30 linklist contact">
+                  <li><i class="fa fa-map-marker"></i>
+                    <address>
+                      Jl.Kalimatan 34 Kampus Universitas Jember, 68125
+                    </address>
+                  </li>
+                  <li><i class="fa fa-phone"></i> +62 (0331) 4858675</li>
+                  <li><i class="fa fa-envelope-o"></i> unej.ac.id@gmail.com</li>
+                </ul>
+                <ul class="faico clear">
+                  <li><a class="faicon-facebook" href="www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                  <li><a class="faicon-twitter" href="www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+                  <li><a class="faicon-dribble" href="www.google.com"><i class="fa fa-dribbble"></i></a></li>
+                  <li><a class="faicon-linkedin" href="www.linked.com"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a class="faicon-google-plus" href="www.googleplus.com"><i class="fa fa-google-plus"></i></a></li>
+                  <li><a class="faicon-vk" href="www.vk.com"><i class="fa fa-vk"></i></a></li>
+                </ul>
+              </div>
+              <div class="one_third">
+                <h6 class="heading">Facilisis morbi interdum</h6>
+                <ul class="nospace linklist">
+                  <li>
+                    <article>
+                      <h2 class="nospace font-x1"><a href="#">volutpat maximus vel</a></h2>
+                      <time class="font-xs block btmspace-10" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
+                      <p class="nospace">Primis in faucibus nam dictum malesuada dictum maecenas in magna arcu [&hellip;]</p>
+                    </article>
+                  </li>
+                  <li>
+                    <article>
+                      <h2 class="nospace font-x1"><a href="#">et malesuada fames ante</a></h2>
+                      <time class="font-xs block btmspace-10" datetime="2045-04-05">Thursday, 5<sup>th</sup> April 2045</time>
+                      <p class="nospace">Nullam tortor ligula lobortis pharetra leo vel malesuada auctor odio nunc [&hellip;]</p>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+              <div class="one_third">
+                <h6 class="heading">Justo condimentum tortor</h6>
+                <p class="nospace btmspace-30">Non condimentum lectus proin consequat eleifend elementum quisque nulla.</p>
+                <form method="post" action="#">
+                  <fieldset>
+                    <legend>Newsletter:</legend>
+                    <input class="btmspace-15" type="text" value="" placeholder="Name">
+                    <input class="btmspace-15" type="text" value="" placeholder="Email">
+                    <button type="submit" value="submit">Submit</button>
+                  </fieldset>
+                </form>
+              </div>
+            </footer>
+          </div>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+          <div class="wrapper row5">
+            <div id="copyright" class="hoc clear"> 
+              <p class="fl_left">Copyright &copy; 2019 - Kelompok 4 - <a href="#">Kelas C</a></p>
+            </div> 
+          </div>
 
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
-function openFormdaftar() {
-  document.getElementById("myFormdaftar").style.display = "block";
-}
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-function closeForm2() {
-  document.getElementById("myFormdaftar").style.display = "none";
-}
-</script>
+          <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
 
-<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
-<!-- JAVASCRIPTS -->
-<script src="css/scripts/jquery.min.js"></script>
-<script src="css/scripts/jquery.backtotop.js"></script>
-<script src="css/scripts/jquery.mobilemenu.js"></script>
-</body>
-</html>
+            function openForm() {
+              document.getElementById("myForm").style.display = "block";
+            }
+            function openFormdaftar() {
+              document.getElementById("myFormdaftar").style.display = "block";
+            }
+            function closeForm() {
+              document.getElementById("myForm").style.display = "none";
+            }
+            function closeForm2() {
+              document.getElementById("myFormdaftar").style.display = "none";
+            }
+          </script>
+
+          <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+          <!-- JAVASCRIPTS -->
+          <script src="css/scripts/jquery.min.js"></script>
+          <script src="css/scripts/jquery.backtotop.js"></script>
+          <script src="css/scripts/jquery.mobilemenu.js"></script>
+        </body>
+        </html>

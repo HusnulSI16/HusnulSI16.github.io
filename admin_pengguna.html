@@ -3,14 +3,14 @@
 <head>
   <title>Data Pelanggan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="css/side_bar.css">
-        <link rel="stylesheet" href="css/tampilan.css">
+  <link rel="stylesheet" href="css/side_bar.css">
+  <link rel="stylesheet" href="css/tampilan.css">
 </head>
 </head>
 <body>
 
-<div class="sidenav" >
-  <img src="img/Admin.GIF" style=" width: 150px; height: 150px; border-radius: 50%">
+  <div class="sidenav" >
+    <img src="img/Admin.GIF" style=" width: 150px; height: 150px; border-radius: 50%">
     <a href="Admin.html">Pesan</a>
     <a href="admin_stok.html">Stok</a>
     <a href="admin_pemesanan.html">Pemesanan</a>
@@ -18,135 +18,127 @@
     <a href="index.html">Keluar</a>
   </div>
 
-<div class="main">
+  <div class="main">
     <div class="kotak">
-    <div class="kotak_putih">
-   <div style="text-align: center;">
-      <h2>Data Pengguna</h2>
-    </div>
-    <div id="wrap1">
-            <div class="cari_wraper">
-                  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Cari ID.." title="Type in a name">
-            </div>
-           </div>
-       <table id="myTable">
-
-  <tr>
-    <th>ID</th>
-    <th>Nama Pembeli</th>
-    <th>Alamat</th>
-    <th>Status</th>
-    <th>Aksi</th>
-  </tr>
-  <tr>
-    <td>1</td>
-  <td>Sarimin</td>
-  <td>JL. Kalimantan No. 34</td>
-   <td>Aktif</td>
-  <td><a class="tombol tombol-detail" href="admin_pengguna_detail.html">Detail</a></td>
-  </tr>
-  <tr>
-    <td>2</td>
-  <td>Tono</td>
-  <td>JL. Kalimantan No. 34</td>
-  <td>Aktif</td>
-  <td><a class="tombol tombol-detail" href="admin_pengguna_detail.html">Detail</a></td>
-  </tr>
-  <tr>
-    <td>3</td>
-  <td>Sarimin</td>
-  <td>JL. Kalimantan No. 34</td>
-   <td>Aktif</td>
-  <td><a class="tombol tombol-detail" href="admin_pengguna_detail.html">Detail</a></td>
-  </tr>
-  <tr>
-   <td>4</td>
-  <td>Sarimin</td>
-  <td>JL. Kalimantan No. 34</td>
-   <td>Tidak Aktif</td>
-  <td><a class="tombol tombol-detail" href="admin_pengguna_detail.html">Detail</a></td>
-  </tr>
-  <tr>
-    <td>1</td>
-  <td>Sarimin</td>
-  <td>JL. Kalimantan No. 34</td>
-   <td>Aktif</td>
-  <td><a class="tombol tombol-detail" href="admin_pengguna_detail.html">Detail</a></td>
-  </tr>
-  <tr>
-    <td>2</td>
-  <td>Sarimin</td>
-  <td>JL. Kalimantan No. 34</td>
-   <td>Aktif</td>
-  <td><a class="tombol tombol-detail" href="admin_pengguna_detail.html">Detail</a></td>
-  </tr>
-  <tr>
-    <td>3</td>
-  <td>Sarimin</td>
-  <td>JL. Kalimantan No. 34</td>
-   <td>Aktif</td>
-  <td><a class="tombol tombol-detail" href="admin_pengguna_detail.html">Detail</a></td>
-  </tr>
-  <tr>
-   <td>4</td>
-  <td>Sarimin</td>
-  <td>JL. Kalimantan No. 34</td>
-   <td>Aktif</td>
-  <td><a class="tombol tombol-detail" href="admin_pengguna_detail.html">Detail</a></td>
-  </tr>
-      <td>1</td>
-  <td>Sarimin</td>
-  <td>JL. Kalimantan No. 34</td>
-   <td>Aktif</td>
-  <td><a class="tombol tombol-detail" href="admin_pengguna_detail.html">Detail</a></td>
-  </tr>
-  <tr>
-    <td>2</td>
-  <td>Ainggora</td>
-  <td>JL. Kalimantan No. 34</td>
-   <td>Aktif</td>
-  <td><a class="tombol tombol-detail" href="admin_pengguna_detail.html">Detail</a></td>
-  </tr>
-  <tr>
-    <td>3</td>
-  <td>Sarimin</td>
-  <td>JL. Kalimantan No. 34</td>
-   <td>Aktif</td>
-  <td><a class="tombol tombol-detail" href="admin_pengguna_detail.html">Detail</a></td>
-  </tr>
-  <tr>
-   <td>4</td>
-  <td>Sarimin</td>
-  <td>JL. Kalimantan No. 34</td>
-   <td>Aktif</td>
-  <td><a class="tombol tombol-detail" href="admin_pengguna_detail.html">Detail</a></td>
-  </tr>
-</table>
-<br>
+      <div class="kotak_putih">
+       <div style="text-align: center;">
+        <h2>Data Pengguna</h2>
+      </div>
+      <div id="wrap1">
+        <div class="cari_wraper">
+          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Cari Nama Pengguna" title="Type in a name">
+        </div>
+      </div>
+      <table id="myTable">
+        <tr>
+          <th>ID</th>
+          <th>Nama Pembeli</th>
+          <th>Alamat</th>
+          <th>Status</th>
+          <th>Aksi</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Samudin</td>
+          <td>JL. Kalimantan No. 34</td>
+          <td>Aktif</td>
+          <td><a class="tombol tombol-detail" href="admin_pengguna_detail.html">Detail</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Tono</td>
+          <td>JL. Kalimantan No. 34</td>
+          <td>Aktif</td>
+          <td><a class="tombol tombol-detail" href="admin_pengguna_detail.html">Detail</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Sarkamu</td>
+          <td>JL. Kalimantan No. 34</td>
+          <td>Aktif</td>
+          <td><a class="tombol tombol-detail" href="admin_pengguna_detail.html">Detail</a></td>
+        </tr>
+        <tr>
+         <td>4</td>
+         <td>Sonata</td>
+         <td>JL. Kalimantan No. 34</td>
+         <td>Tidak Aktif</td>
+         <td><a class="tombol tombol-detail" href="admin_pengguna_detail.html">Detail</a></td>
+       </tr>
+       <tr>
+          <td>3</td>
+          <td>Sandi</td>
+          <td>JL. Kalimantan No. 34</td>
+          <td>Aktif</td>
+          <td><a class="tombol tombol-detail" href="admin_pengguna_detail.html">Detail</a></td>
+        </tr>
+        <tr>
+         <td>4</td>
+         <td>Sandal jepit</td>
+         <td>JL. Kalimantan No. 34</td>
+         <td>Tidak Aktif</td>
+         <td><a class="tombol tombol-detail" href="admin_pengguna_detail.html">Detail</a></td>
+        </tr>
+       <tr>
+        <td>1</td>
+        <td>Samanto</td>
+        <td>JL. Kalimantan No. 34</td>
+        <td>Aktif</td>
+        <td><a class="tombol tombol-detail" href="admin_pengguna_detail.html">Detail</a></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Tono</td>
+        <td>JL. Kalimantan No. 34</td>
+        <td>Aktif</td>
+        <td><a class="tombol tombol-detail" href="admin_pengguna_detail.html">Detail</a></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Sarokaya</td>
+        <td>JL. Kalimantan No. 34</td>
+        <td>Aktif</td>
+        <td><a class="tombol tombol-detail" href="admin_pengguna_detail.html">Detail</a></td>
+      </tr>
+      <tr>
+       <td>4</td>
+       <td>Sarimin</td>
+       <td>JL. Kalimantan No. 34</td>
+       <td>Tidak Aktif</td>
+       <td><a class="tombol tombol-detail" href="admin_pengguna_detail.html">Detail</a></td>
+     </tr>
+   </table>
+   <br><br>
+   <div class="pagination">
+    <a href="#">&laquo;</a>
+    <a href="#">1</a>
+    <a class="active" href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">&raquo;</a>
   </div>
-  </div>
+</div>
+</div>
+</div>
 
-  <script>
-function myFunction() {
-  var input, filter, table, tr, td, i;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[1];
-    if (td) {
-      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }       
+<script>
+  function myFunction() {
+    var input, filter, table, tr, td, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[1];
+      if (td) {
+        if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }       
+    }
   }
-}
 </script>
 
-</div>
-   
 </body>
 </html> 

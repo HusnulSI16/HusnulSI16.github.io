@@ -3,12 +3,12 @@
 <head>
 	<title>Tambah Produk</title>
   <link rel="stylesheet" href="css/side_bar.css">
-   <link rel="stylesheet" href="css/tampilan.css">
+  <link rel="stylesheet" href="css/tampilan.css">
 </head>
 <body>
 
-<div class="sidenav" >
-  <img src="img/Admin.GIF" style=" width: 150px; height: 150px; border-radius: 50%">
+  <div class="sidenav" >
+    <img src="img/Admin.GIF" style=" width: 150px; height: 150px; border-radius: 50%">
     <a href="Admin.html">Pesan</a>
     <a href="admin_stok.html">Stok</a>
     <a href="admin_pemesanan.html">Pemesanan</a>
@@ -16,47 +16,47 @@
     <a href="index.html">Keluar</a>
   </div>
 
-<div class="main">
-  <div class="kotak">
-    <div class="kotak_putih">
-          <h3>Tambah Data Produk Baru</h3>
-          <form action="admin_stok.html" class="form-container">
-            <div class="form_item">
-              <label>Upload Foto Produk</label>
-              <input type='file' onchange="readURL(this);" required><br><br>
-              <div id="span">
-            <span><img id="blah" src="http://placehold.it/180" alt="Tidak Ada File"></span>
+  <div class="main">
+    <div class="kotak">
+      <div class="kotak_putih">
+        <h3>Tambah Data Produk Baru</h3>
+        <form action="admin_stok.html" class="form-container" method="post">
+          <div class="form_item">
+            <label>Upload Foto Produk</label>
+            <input type='file' onchange="readURL(this);" required><br><br>
+            <div id="span">
+              <span><img id="blah" alt="Tidak Ada File"></span>
             </div>
-            </div>
-            <br>
-            <div class="form_item">
-              <label>Nama Produk</label>
-              <input type="text" name="Produk" required>
-            </div>
-            <br>
-            <div class="form_item">
-              <label>Jumlah Stok</label>
-              <input type="number" name="Produk" required>
-            </div>
-            <br>
-            <div class="form_item">
-              <label>Harga/kg</label>
-              <input type="number" name="Produk" required>
-            </div>
-            <br>
-            <div class="form_item">
-              <label>Deskripsi</label>
-              <textarea type="text" name="Produk" required></textarea>
-            </div>
-            <br>
+          </div>
+          <br>
+          <div class="form_item">
+            <label>Nama Produk</label>
+            <input type="text" name="Produk" required>
+          </div>
+          <br>
+          <div class="form_item">
+            <label>Jumlah Stok</label>
+            <input type="number" name="Produk" required>
+          </div>
+          <br>
+          <div class="form_item">
+            <label>Harga/kg</label>
+            <input type="number" name="Produk" required>
+          </div>
+          <br>
+          <div class="form_item">
+            <label>Deskripsi</label>
+            <textarea type="text" name="Produk" required></textarea>
+          </div>
+          <br>
 
-            <div class="form_item" id="submit_form">
-              <button type="submit" class="tmbl tmbl_tambah">Simpan</button>
-            </div>
-          </form>
-        </div>
+          <div class="form_item" id="submit_form">
+            <button type="submit" class="tmbl tmbl_tambah">Simpan</button>
+          </div>
+        </form>
       </div>
-      </div>
+    </div>
+  </div>
 
   <script src="./css/scripts/jquery.min.js"></script>
   <script  src="./css/scripts/viewscript.js"></script>

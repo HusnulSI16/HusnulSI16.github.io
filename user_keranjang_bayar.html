@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>User Profil</title>
+	<title>Detail Pembayaran</title>
   <link rel="stylesheet" type="text/css" href="css/topnav.css">
   <link rel="stylesheet" type="text/css" href="css/tampilan.css">
   <link rel="stylesheet" type="text/css" href="css/layout.css" media="all">
 </head>
-<body>
- 
- <!-- ################################################################################################ -->
+<body id="top">
  <div class="topnav" id="myTopnav">
   <a href="index.html">Keluar</a>
   <a href="user_profil.html">Profil</a>
@@ -23,42 +21,67 @@
 <!--Konten-->		
 <div class="kotak">
   <div class="kotak_putih">
-   <div class="personal">
-    <h3 style="text-align: center;">Data Diri</h3> <hr>
-    <img id="blah" src="img/pelanggan.jpg" style="width: 200px; height: 200px; padding: 20px; border-radius: 50%;">
-    <input type='file' onchange="readURL(this);" required>
-    <form method="post">
+    <h3 style="text-align: center;">Detail Pembayaran</h3> <hr>
+    <form action="user_pembelian.html" method="post">
+      <br>
       <div class="form_item">
-        <label>Nama</label>
+        <label>Nama Penerima</label>
         <input type="text" name="nama" value="Husnul Hotimatus Sahroh" required>
       </div>
       <br>
       <div class="form_item">
         <label>Nomor Telepon</label>
-        <input type="text" name="nama" value="0987654321" required>
+        <input type="number" name="nama" value="0987654321" required>
       </div>
       <br>
       <div class="form_item">
-        <label>Alamat</label>
+        <label>Alamat Detail</label>
         <input type="text" name="nama" value="Jalan Serma Moch Ahdar Antirogo jember" required>
+        <br>
+        <label>Provinsi</label>
+        <select>
+          <option>Pilih Provinsi</option>
+          <option>Jawa Timur</option>
+          <option>Jawa Barat</option>
+        </select><br>
+        <label>Kabupaten</label>
+        <select>
+          <option>Pilih Kabupaten</option>
+          <option>Jember</option>
+          <option>Lumajang</option>
+        </select><br>              
+        <label>Kecamatan</label>
+        <select>
+          <option>Pilih Kecamatan</option>
+          <option>Sumbersari</option>
+          <option>Kalisat</option>
+        </select>
       </div>
-      <br>
+      <label>Total Produk</label>
+      <div id="span" id="totalCtr">
+        <span>Rp. 20000</span>
+      </div>
+      <label>Biaya Pengiriman</label>
+      <div id="span" id="totalCtr">
+        <span>Rp. 11000</span>
+      </div>
+      <label>Total Pembayaran</label>
+      <div id="span" id="totalCtr">
+        <span>Rp. 31000</span>
+      </div>
+      <label>Sistem Pembayaran</label>
+      <div id="span" id="totalCtr">
+        <span>COD/Bayar Ditempat</span>
+      </div> 
       <div class="form_item">
-        <label>E-mail</label>
-        <input type="text" name="nama" value="Husnul@gmail.com" required>
+        <label>Pesan</label>
+        <textarea> </textarea>
       </div>
-      <br>
-      <label>Status</label>
-      <div id="span">
-        <span>Aktif</span>
-      </div>
-      <br>                
       <div class="form_item" id="submit_form">
-        <button type="submit" href="#" class="tmbl tmbl_tambah">Perbaharui</button>
+        <button type="submit" href="#" class="tmbl tmbl_tambah">Pesan</button>
       </div>
     </form>
   </div>
-</div>
 </div>
 
     <!-- Footer
@@ -138,9 +161,8 @@
     <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
     <!-- ################################################################################################ -->
     <!-- JAVASCRIPTS -->
-    <script src="./css/scripts/jquery.min.js"></script>
-    <script src="./css/scripts/jquery.backtotop.js"></script>
-    <script src="./css/scripts/jquery.mobilemenu.js"></script>
-    <script  src="./css/scripts/viewscript.js"></script>
+    <script src="layout/scripts/jquery.min.js"></script>
+    <script src="layout/scripts/jquery.backtotop.js"></script>
+    <script src="layout/scripts/jquery.mobilemenu.js"></script>
   </body>
   </html>
