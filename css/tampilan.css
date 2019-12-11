@@ -51,7 +51,7 @@
     padding: 7px;
     display: block;
     float: left;
-    width: 60%;
+    width: 45%;
     margin: 3px;
     text-align: center;
     color: white;
@@ -80,6 +80,7 @@
     color: white;
     cursor: pointer;
     padding: 7px;
+    margin-top:  20px;
 }
 .tmbl:hover
 {
