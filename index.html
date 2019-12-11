@@ -60,14 +60,33 @@
         <a href="#kedua">Lihat Penjelasan</a>
       </div>
     </div>
+    <div class="slideshow-container">
 
-    <!--carousel-->
-    <div class=malasngoding-slider>
-      <div class=isi-slider>
-        <img src="img/Gambar1.png" alt="Gambar 1">
-        <img src="img/Gambar2.png" alt="Gambar 2">
-        <img src="img/Gambar3.png" alt="Gambar 3">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="img/Gambar1.PNG" style="width:100%">
+        <div class="text">Caption Text</div>
       </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="img/Gambar2.PNG" style="width:100%">
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="img/Gambar3.PNG" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
     </div>
     
     <div class="sale-statistic-area">
@@ -171,12 +190,32 @@
             function closeForm2() {
               document.getElementById("myFormdaftar").style.display = "none";
             }
-          </script>
 
-          <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
-          <!-- JAVASCRIPTS -->
-          <script src="css/scripts/jquery.min.js"></script>
-          <script src="css/scripts/jquery.backtotop.js"></script>
-          <script src="css/scripts/jquery.mobilemenu.js"></script>
-        </body>
-        </html>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="css/scripts/jquery.min.js"></script>
+<script src="css/scripts/jquery.backtotop.js"></script>
+<script src="css/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>

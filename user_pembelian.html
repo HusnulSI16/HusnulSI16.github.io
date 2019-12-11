@@ -2,7 +2,6 @@
 <html>
 <head>
 	<title>user Pembelian</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<link rel="stylesheet" type="text/css" href="css/topnav.css">
 	<link rel="stylesheet" type="text/css" href="css/tampilan.css">
 	<link rel="stylesheet" type="text/css" href="css/layout.css" media="all">
@@ -23,8 +22,12 @@
 		<!--konten-->
 		<div class="kotak">
 			<div class="kotak_putih">
-				<h2 style="padding: 20px;">Data Pemesanan</h2>
-				<table class="tabel">
+				<h2 style="padding: 20px; text-align: center;">Data Pemesanan</h2>
+				<div id="wrap1">
+					<div class="cari_wraper">
+						<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Cari ID.." title="Type in a name">
+					</div><br>
+				<table>
 					<tr>
 						<th>id</th>
 						<th>Jenis Kurir</th>
@@ -40,71 +43,71 @@
 						<td>ID0987653456789</td>
 						<td>31000</td>
 						<td>Produk dikirimkan</td>
-						<td><a class="tombol tombol-detail" href="user_pembelian_detail.html">Nilai Produk</a></td>
+						<td><a class="tombol tombol-detail" href="user_pembelian_detail.html">Nilai</a></td>
 					</tr>
 					<tr>
 						<td>1</td>
 						<td>JNE</td>
-						<td>ID0987653456789</td>
+						<td>ID7653456780983</td>
 						<td>97000</td>
 						<td>Pesanan Diterima</td>
-						<td><a class="tombol tombol-detail" href="user_pembelian_detail.html">Nilai Produk</a></td>
+						<td><a class="tombol tombol-detail" href="user_pembelian_detail.html">Nilai</a></td>
 					</tr>
 					<tr>
 						<td>1</td>
 						<td>JNE</td>
-						<td>ID0987653456789</td>
+						<td>ID459876523456</td>
 						<td>100000</td>
 						<td>Pesanan Diterima</td>
-						<td><a class="tombol tombol-detail" href="user_pembelian_detail.html">Nilai Produk</a></td>
+						<td><a class="tombol tombol-detail" href="user_pembelian_detail.html">Nilai</a></td>
 					</tr>
 					<tr>
 						<td>1</td>
 						<td>JNE</td>
-						<td>ID0987653456789</td>
+						<td>ID3456787654234</td>
 						<td>31000</td>
 						<td>Produk dikirimkan</td>
-						<td><a class="tombol tombol-detail" href="user_pembelian_detail.html">Nilai Produk</a></td>
+						<td><a class="tombol tombol-detail" href="user_pembelian_detail.html">Nilai</a></td>
 					</tr>
 					<tr>
 						<td>1</td>
 						<td>JNE</td>
-						<td>ID0987653456789</td>
+						<td>ID654323456789</td>
 						<td>97000</td>
 						<td>Pesanan Diterima</td>
-						<td><a class="tombol tombol-detail" href="user_pembelian_detail.html">Nilai Produk</a></td>
+						<td><a class="tombol tombol-detail" href="user_pembelian_detail.html">Nilai</a></td>
 					</tr>
 					<tr>
 						<td>1</td>
 						<td>JNE</td>
-						<td>ID0987653456789</td>
+						<td>ID345698765412</td>
 						<td>100000</td>
 						<td>Pesanan Diterima</td>
-						<td><a class="tombol tombol-detail" href="user_pembelian_detail.html">Nilai Produk</a></td>
+						<td><a class="tombol tombol-detail" href="user_pembelian_detail.html">Nilai</a></td>
 					</tr>
 					<tr>
 						<td>1</td>
 						<td>JNE</td>
-						<td>ID0987653456789</td>
+						<td>ID345676548765</td>
 						<td>31000</td>
 						<td>Produk dikirimkan</td>
-						<td><a class="tombol tombol-detail" href="user_pembelian_detail.html">Nilai Produk</a></td>
+						<td><a class="tombol tombol-detail" href="user_pembelian_detail.html">Nilai</a></td>
 					</tr>
 					<tr>
 						<td>1</td>
 						<td>JNE</td>
-						<td>ID0987653456789</td>
+						<td>ID98765498765439</td>
 						<td>97000</td>
 						<td>Pesanan Diterima</td>
-						<td><a class="tombol tombol-detail" href="user_pembelian_detail.html">Nilai Produk</a></td>
+						<td><a class="tombol tombol-detail" href="user_pembelian_detail.html">Nilai</a></td>
 					</tr>
 					<tr>
 						<td>1</td>
 						<td>JNE</td>
-						<td>ID0987653456789</td>
+						<td>ID97123456543</td>
 						<td>100000</td>
 						<td>Pesanan Diterima</td>
-						<td><a class="tombol tombol-detail" href="user_pembelian_detail.html">Nilai Produk</a></td>
+						<td><a class="tombol tombol-detail" href="user_pembelian_detail.html">Nilai</a></td>
 					</tr>
 				</table><br>
 				<div class="pagination">
@@ -126,6 +129,26 @@
 					x.className = "topnav";
 				}
 			}
+
+
+			function myFunction() {
+				var input, filter, table, tr, td, i;
+				input = document.getElementById("myInput");
+				filter = input.value.toUpperCase();
+				table = document.getElementById("myTable");
+				tr = table.getElementsByTagName("tr");
+				for (i = 0; i < tr.length; i++) {
+					td = tr[i].getElementsByTagName("td")[2];
+					if (td) {
+						if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+							tr[i].style.display = "";
+						} else {
+							tr[i].style.display = "none";
+						}
+					}       
+				}
+			}
+
 		</script>
 	</body>
 	</html>
