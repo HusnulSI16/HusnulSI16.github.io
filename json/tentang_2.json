@@ -1,0 +1,19 @@
+[
+	{
+		"image"		: "img/produk/7.jpg",
+		"nama"		: "Kripik Pisang Manis",
+		"deskripsi" :"merupakan makanan yang di oleh dengan bumbu tertentu dan ada juga yang memang original, dan dengan cara di goreng, selain itu keripik juga lebih banyak di jual dengan berbagai bentuk yang memiliki bentuk tipis, itu adalah cirri khas keripik yang ada karena jika diameter nya terlalu tebal akan membuat keripik tersebut tidak akan matang dengan sempurna atau kurang renyah"
+	},
+	{
+		"image"		: "img/produk/1.jpg",
+		"nama"		: "Kripik Singkong Asin",
+		"deskripsi" :"merupakan makanan yang di oleh dengan bumbu tertent keripik singkong memiliki rasa khas tersendiri. Keripik singkong memiliki daya tarik tersendiri untuk membuat orang yang memakan nya merasa ketagihan untuk terus memakan nya, oleh karena itulah"
+	},
+	{
+		"image"		: "img/produk/8.jpg",
+		"nama"		: "Kripik Kentang Original",
+		"deskripsi" :"merupakan makanan yang di oleh dengan bumbu tertent  olah menjadi keripik singkong, ada banyak sekali jenis singkong yang bisa di olah menjadi keripik singkong, seperti singkong mentega, singkong gajah dan lain"
+
+	}
+
+]
