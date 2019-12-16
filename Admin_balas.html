@@ -4,7 +4,6 @@
 	<title>Admin Pesan</title>
 	<link rel="stylesheet" type="text/css" href="css/side_bar.css">
 	<link rel="stylesheet" type="text/css" href="css/tampilan.css">
-  <link rel="stylesheet" type="text/css" href="css/form.css">
 </head>
 <body>
 
@@ -32,18 +31,26 @@
       <div class="comcont">
         <p>This is an example of a comment made on a post. You can either edit the comment, delete the comment or reply to the comment. Use this as a place to respond to the post or to share what you are thinking.</p>
       </div>
-      <form action="Admin.html">
+      <form>
         <div class="form_item">
+          <label>Admin : </label><p id='boldStuff2'></p>
           <label>Pesan</label>
-          <textarea type="text" name="pesan" required></textarea>
+          <textarea type="text" id='userInput' required></textarea>
           <div class="form_item" id="submit_form">
-            <button type="submit" class="tmbl tmbl_tambah">Kirim</button>
+            <input type="reset" onclick='changeText2()' class="tmbl tmbl_tambah" value="Kirim"></input>
           </div>
         </div>
       </form>
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+function changeText2(){
+  var userInput = document.getElementById('userInput').value;
+  document.getElementById('boldStuff2').innerHTML = userInput;
+}
+</script>
 
 </body>
 </html> 
