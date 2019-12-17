@@ -9,7 +9,11 @@
   border: 3px solid #f1f1f1;
   z-index: 9;
   /*margin:none;*/
-  left: 40%;
+  right: 40%;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.1s;
+  animation-name: animatetop;
+  animation-duration: 0.1s
 }
 
 /* Add styles to the form container */
@@ -17,6 +21,7 @@
   max-width: 300%;
   padding: 10%;
   background-color: #237a8d;
+
 }
 
 /* Full-width input fields */
@@ -54,4 +59,24 @@
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes show_mmodal {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes hide_modal{
+  from{top: 0px; opacity: 1;}
+  to{top: -300; opacity: 0;}
 }
